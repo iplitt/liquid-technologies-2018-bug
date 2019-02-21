@@ -1,0 +1,119 @@
+<?xml version="1.0"?>
+<!-- edited with XMLSpy v2010 rel. 3 sp1 (http://www.altova.com) by Jarrod Martin (Release Consulting) -->
+<!-- edited with XMLSPY v2004 rel. 4 U (http://www.xmlspy.com) by Any Authorised User (Teksys Ltd) -->
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns="http://umusic.net/webservices/itdi/vanilla" targetNamespace="http://umusic.net/webservices/itdi/vanilla" elementFormDefault="qualified" attributeFormDefault="unqualified" version="2.1">
+	<xs:include schemaLocation="CommonTypes.xsd"/>
+	<xs:complexType name="ProductCommon">
+		<xs:sequence>
+			<xs:element name="ReleaseDate" type="xs:string" nillable="false">
+				<xs:annotation>
+					<xs:documentation>The release date of the product. Format is yyyymmdd. This is formatted such that it is possible for the date to be incomplete if parts of the release date have not been confirmed, e.g. if the release date is Jan 2005 but the day is to be confirmed this would be represented as ‘200501’. If the release date is TBC the string will be empty. Release dates before January 2004 have been backfilled from external data source. In cases where the external source was incomplete, product was marked with a Release data of 'TBC Dec 1980'. This is represented as '198012'. There are approximately 880 products with this value in the CPRS Catalogue
+</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="CPRSVersionTitle" nillable="true">
+				<xs:annotation>
+					<xs:documentation>This can be used to distinguish between different versions, such as exclusives with Retailers, NTSC or PAL, etc. </xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:maxLength value="255"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="CPRSProductType" nillable="false">
+				<xs:annotation>
+					<xs:documentation>The type of this product.  This can currently be one of: Promo, Commercial, Exclusive, Import, Digital, Distribution-only or IMS.</xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:maxLength value="255"/>
+						<xs:enumeration value="Promo"/>
+						<xs:enumeration value="Commercial"/>
+						<xs:enumeration value="Exclusive"/>
+						<xs:enumeration value="Import"/>
+						<xs:enumeration value="IMS"/>
+						<xs:enumeration value="Distribution"/>
+						<xs:enumeration value="ePD"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="CPRSStatus" nillable="false">
+				<xs:annotation>
+					<xs:documentation>The status of the product within the CPRS.This can be Error and product will be removed in next db clean, Scheduled, InProgress if not all info has been entered or Deleted (in the catalogue sense rather than deleted from CPRS).</xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:enumeration value="Error"/>
+						<xs:enumeration value="Scheduled"/>
+						<xs:enumeration value="InProgress"/>
+						<xs:enumeration value="Deleted"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="CPRSFormatCode" type="CodeDescType">
+				<xs:annotation>
+					<xs:documentation>Describes the format of the product using CPRS identifiers. Otherwise known as configuration code.</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="CPRSConfigID" type="xs:string"/>
+			<xs:element name="Manufacturers">
+				<xs:complexType>
+					<xs:sequence minOccurs="0" maxOccurs="unbounded">
+						<xs:element name="Manufacturer" type="ManufacturerType"/>
+					</xs:sequence>
+				</xs:complexType>
+			</xs:element>
+			<xs:element name="ManufactureLocation" minOccurs="0">
+				<xs:complexType>
+					<xs:sequence>
+						<xs:element name="LocationID" type="xs:int"/>
+						<xs:element name="Description"/>
+					</xs:sequence>
+				</xs:complexType>
+			</xs:element>
+			
+			<xs:element name="CPRSPriceCode" nillable="true">
+				<xs:annotation>
+					<xs:documentation>This is the Commercial Price charged to dealers. As at 01/09/04 there are 24,000 products in CPRS, but less than 2000 have Price Codes. </xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:maxLength value="255"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="Comments">
+				<xs:annotation>
+					<xs:documentation>Any comments related to the product.</xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:maxLength value="1000"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+		</xs:sequence>
+	</xs:complexType>
+
+	<xs:complexType name="InitialOrderValidation">
+		<xs:annotation>
+			<xs:documentation>Contains initial order validation status information.</xs:documentation>
+		</xs:annotation>
+		<xs:sequence>
+			<xs:element name="Status" nillable="false">
+				<xs:annotation>
+					<xs:documentation>Intial Order Approval Status enumeration.</xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:enumeration value="NotValidated"/>
+						<xs:enumeration value="Validated"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="ValidationDate" type="xs:dateTime" minOccurs="0"/>
+			<xs:element name="Validator" type="User" nillable="true" minOccurs="0"/>
+		</xs:sequence>
+	</xs:complexType>
+</xs:schema>

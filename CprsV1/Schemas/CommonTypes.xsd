@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- edited with XMLSpy v2013 sp1 (x64) (http://www.altova.com) by Associate (UNIVERSAL MUSIC GROUP) -->
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns="http://umusic.net/webservices/itdi/vanilla" targetNamespace="http://umusic.net/webservices/itdi/vanilla" elementFormDefault="qualified" attributeFormDefault="unqualified" version="2.1">
+	<xs:complexType name="CodeDescType">
+		<xs:all>
+			<xs:element name="Code" form="unqualified">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:maxLength value="255"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="Description" form="unqualified">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:maxLength value="255"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+		</xs:all>
+	</xs:complexType>
+	<xs:complexType name="LabelType">
+		<xs:annotation>
+			<xs:documentation>When label code = '0' then no label has been found.</xs:documentation>
+		</xs:annotation>
+		<xs:sequence>
+			<xs:element name="LabelID" type="xs:int"/>
+			<xs:element name="LabelName">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:maxLength value="255"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="ProductMedium">
+		<xs:sequence>
+			<xs:element name="ProductMedium">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:enumeration value="Physical"/>
+						<xs:enumeration value="Digital"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="User">
+		<xs:sequence>
+			<xs:element name="Firstname" nillable="false">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:maxLength value="50"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="Lastname" nillable="false">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:maxLength value="50"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="CPRSUserId" type="xs:int" nillable="false"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="Currency">
+		<xs:sequence>
+			<xs:element name="CurrencyId" type="xs:int" nillable="false"/>
+			<xs:element name="Name" nillable="true">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:maxLength value="50"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="ISOCode" nillable="true">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:maxLength value="3"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="Symbol" nillable="false">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:maxLength value="10"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="CurrencyPrice">
+		<xs:sequence>
+			<xs:element name="iso" type="xs:string"/>
+			<xs:element name="Price" type="xs:decimal"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="ManufacturerType">
+		<xs:all>
+			<xs:element name="Name" type="xs:string"/>
+			<xs:element name="ManufacturerID" type="xs:int"/>
+		</xs:all>
+	</xs:complexType>
+</xs:schema>

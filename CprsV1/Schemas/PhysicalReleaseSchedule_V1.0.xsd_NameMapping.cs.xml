@@ -1,0 +1,1595 @@
+<?xml version="1.0"?>
+<MappingSchema Language="CS" CollectionMapping="Pluralize" NamespacePrefix="CprsV1">
+  <Class Name="Approver_Nillable" LongName="Approver_Nillable" MappedClassColName="Approver_NillableCol" MappedClassName="Approver_Nillable">
+    <Description>
+    </Description>
+    <Remarks>
+    </Remarks>
+    <Attribute Name="Firstname" DefaultValue="" MappedIsValidMember="m_IsValidFirstname" MappedSetValidName="SetValidFirstname" MappedIsValidName="IsValidFirstname" MappedIsNilMember="m_IsNilFirstname" MappedSetNilName="SetNilFirstname" MappedIsNilName="IsNilFirstname" MappedMemberName="m_Firstname" MappedDisplayName="Firstname" MappedSetterName="Firstname" MappedGetterName="Firstname" FormatOverride="">
+      <Description>
+      </Description>
+      <Remarks>
+      </Remarks>
+    </Attribute>
+    <Attribute Name="Lastname" DefaultValue="" MappedIsValidMember="m_IsValidLastname" MappedSetValidName="SetValidLastname" MappedIsValidName="IsValidLastname" MappedIsNilMember="m_IsNilLastname" MappedSetNilName="SetNilLastname" MappedIsNilName="IsNilLastname" MappedMemberName="m_Lastname" MappedDisplayName="Lastname" MappedSetterName="Lastname" MappedGetterName="Lastname" FormatOverride="">
+      <Description>
+      </Description>
+      <Remarks>
+      </Remarks>
+    </Attribute>
+    <Attribute Name="CPRSUserId" DefaultValue="" MappedIsValidMember="m_IsValidCPRSUserId" MappedSetValidName="SetValidCPRSUserId" MappedIsValidName="IsValidCPRSUserId" MappedIsNilMember="m_IsNilCPRSUserId" MappedSetNilName="SetNilCPRSUserId" MappedIsNilName="IsNilCPRSUserId" MappedMemberName="m_CPRSUserId" MappedDisplayName="CPRSUserId" MappedSetterName="CPRSUserId" MappedGetterName="CPRSUserId" FormatOverride="">
+      <Description>
+      </Description>
+      <Remarks>
+      </Remarks>
+    </Attribute>
+  </Class>
+  <Class Name="CodeDescType" LongName="CodeDescType" MappedClassColName="CodeDescTypeCol" MappedClassName="CodeDescType">
+    <Description>
+    </Description>
+    <Remarks>
+    </Remarks>
+    <Attribute Name="Code" DefaultValue="" MappedIsValidMember="m_IsValidCode" MappedSetValidName="SetValidCode" MappedIsValidName="IsValidCode" MappedIsNilMember="m_IsNilCode" MappedSetNilName="SetNilCode" MappedIsNilName="IsNilCode" MappedMemberName="m_Code" MappedDisplayName="Code" MappedSetterName="Code" MappedGetterName="Code" FormatOverride="">
+      <Description>
+      </Description>
+      <Remarks>
+      </Remarks>
+    </Attribute>
+    <Attribute Name="Description" DefaultValue="" MappedIsValidMember="m_IsValidDescription" MappedSetValidName="SetValidDescription" MappedIsValidName="IsValidDescription" MappedIsNilMember="m_IsNilDescription" MappedSetNilName="SetNilDescription" MappedIsNilName="IsNilDescription" MappedMemberName="m_Description" MappedDisplayName="Description" MappedSetterName="Description" MappedGetterName="Description" FormatOverride="">
+      <Description>
+      </Description>
+      <Remarks>
+      </Remarks>
+    </Attribute>
+  </Class>
+  <Class Name="Collaborators" LongName="Collaborators" MappedClassColName="CollaboratorsCol" MappedClassName="Collaborators">
+    <Description>
+    </Description>
+    <Remarks>
+    </Remarks>
+    <Attribute Name="Person" DefaultValue="" MappedIsValidMember="m_IsValidPersons" MappedSetValidName="SetValidPersons" MappedIsValidName="IsValidPersons" MappedIsNilMember="m_IsNilPersons" MappedSetNilName="SetNilPersons" MappedIsNilName="IsNilPersons" MappedMemberName="m_Persons" MappedDisplayName="Persons" MappedSetterName="Persons" MappedGetterName="Persons">
+      <Description>
+      </Description>
+      <Remarks>
+      </Remarks>
+    </Attribute>
+  </Class>
+  <Class Name="Component" LongName="Component" MappedClassColName="ComponentCol" MappedClassName="Component">
+    <Description>
+    </Description>
+    <Remarks>
+    </Remarks>
+    <Attribute Name="CPRSComponentID" DefaultValue="" MappedIsValidMember="m_IsValidCPRSComponentID" MappedSetValidName="SetValidCPRSComponentID" MappedIsValidName="IsValidCPRSComponentID" MappedIsNilMember="m_IsNilCPRSComponentID" MappedSetNilName="SetNilCPRSComponentID" MappedIsNilName="IsNilCPRSComponentID" MappedMemberName="m_CPRSComponentID" MappedDisplayName="CPRSComponentID" MappedSetterName="CPRSComponentID" MappedGetterName="CPRSComponentID" FormatOverride="">
+      <Description>
+      </Description>
+      <Remarks>
+      </Remarks>
+    </Attribute>
+    <Attribute Name="ComponentUPC" DefaultValue="" MappedIsValidMember="m_IsValidComponentUPC" MappedSetValidName="SetValidComponentUPC" MappedIsValidName="IsValidComponentUPC" MappedIsNilMember="m_IsNilComponentUPC" MappedSetNilName="SetNilComponentUPC" MappedIsNilName="IsNilComponentUPC" MappedMemberName="m_ComponentUPC" MappedDisplayName="ComponentUPC" MappedSetterName="ComponentUPC" MappedGetterName="ComponentUPC" FormatOverride="">
+      <Description>
+      </Description>
+      <Remarks>
+      </Remarks>
+    </Attribute>
+    <Attribute Name="Artist" DefaultValue="" MappedIsValidMember="m_IsValidArtist" MappedSetValidName="SetValidArtist" MappedIsValidName="IsValidArtist" MappedIsNilMember="m_IsNilArtist" MappedSetNilName="SetNilArtist" MappedIsNilName="IsNilArtist" MappedMemberName="m_Artist" MappedDisplayName="Artist" MappedSetterName="Artist" MappedGetterName="Artist" FormatOverride="">
+      <Description>
+      </Description>
+      <Remarks>
+      </Remarks>
+    </Attribute>
+    <Attribute Name="Title" DefaultValue="" MappedIsValidMember="m_IsValidTitle" MappedSetValidName="SetValidTitle" MappedIsValidName="IsValidTitle" MappedIsNilMember="m_IsNilTitle" MappedSetNilName="SetNilTitle" MappedIsNilName="IsNilTitle" MappedMemberName="m_Title" MappedDisplayName="Title" MappedSetterName="Title" MappedGetterName="Title" FormatOverride="">
+      <Description>
+      </Description>
+      <Remarks>
+      </Remarks>
+    </Attribute>
+    <Attribute Name="Version" DefaultValue="" MappedIsValidMember="m_IsValidVersion" MappedSetValidName="SetValidVersion" MappedIsValidName="IsValidVersion" MappedIsNilMember="m_IsNilVersion" MappedSetNilName="SetNilVersion" MappedIsNilName="IsNilVersion" MappedMemberName="m_Version" MappedDisplayName="Version" MappedSetterName="Version" MappedGetterName="Version" FormatOverride="">
+      <Description>
+      </Description>
+      <Remarks>
+      </Remarks>
+    </Attribute>
+    <Attribute Name="FormatCode" DefaultValue="" MappedIsValidMember="m_IsValidFormatCode" MappedSetValidName="SetValidFormatCode" MappedIsValidName="IsValidFormatCode" MappedIsNilMember="m_IsNilFormatCode" MappedSetNilName="SetNilFormatCode" MappedIsNilName="IsNilFormatCode" MappedMemberName="m_FormatCode" MappedDisplayName="FormatCode" MappedSetterName="FormatCode" MappedGetterName="FormatCode">
+      <Description>
+      </Description>
+      <Remarks>
+      </Remarks>
+    </Attribute>
+    <Attribute Name="Sequence" DefaultValue="" MappedIsValidMember="m_IsValidSequence" MappedSetValidName="SetValidSequence" MappedIsValidName="IsValidSequence" MappedIsNilMember="m_IsNilSequence" MappedSetNilName="SetNilSequence" MappedIsNilName="IsNilSequence" MappedMemberName="m_Sequence" MappedDisplayName="Sequence" MappedSetterName="Sequence" MappedGetterName="Sequence" FormatOverride="">
+      <Description>
+      </Description>
+      <Remarks>
+      </Remarks>
+    </Attribute>
+    <Attribute Name="SubComponent" DefaultValue="" MappedIsValidMember="m_IsValidSubComponents" MappedSetValidName="SetValidSubComponents" MappedIsValidName="IsValidSubComponents" MappedIsNilMember="m_IsNilSubComponents" MappedSetNilName="SetNilSubComponents" MappedIsNilName="IsNilSubComponents" MappedMemberName="m_SubComponents" MappedDisplayName="SubComponents" MappedSetterName="SubComponents" MappedGetterName="SubComponents">
+      <Description>
+      </Description>
+      <Remarks>
+      </Remarks>
+    </Attribute>
+  </Class>
+  <Class Name="Component_Nillable" LongName="Component_Nillable" MappedClassColName="Component_NillableCol" MappedClassName="Component_Nillable">
+    <Description>
+    </Description>
+    <Remarks>
+    </Remarks>
+    <Attribute Name="CPRSComponentID" DefaultValue="" MappedIsValidMember="m_IsValidCPRSComponentID" MappedSetValidName="SetValidCPRSComponentID" MappedIsValidName="IsValidCPRSComponentID" MappedIsNilMember="m_IsNilCPRSComponentID" MappedSetNilName="SetNilCPRSComponentID" MappedIsNilName="IsNilCPRSComponentID" MappedMemberName="m_CPRSComponentID" MappedDisplayName="CPRSComponentID" MappedSetterName="CPRSComponentID" MappedGetterName="CPRSComponentID" FormatOverride="">
+      <Description>
+      </Description>
+      <Remarks>
+      </Remarks>
+    </Attribute>
+    <Attribute Name="ComponentUPC" DefaultValue="" MappedIsValidMember="m_IsValidComponentUPC" MappedSetValidName="SetValidComponentUPC" MappedIsValidName="IsValidComponentUPC" MappedIsNilMember="m_IsNilComponentUPC" MappedSetNilName="SetNilComponentUPC" MappedIsNilName="IsNilComponentUPC" MappedMemberName="m_ComponentUPC" MappedDisplayName="ComponentUPC" MappedSetterName="ComponentUPC" MappedGetterName="ComponentUPC" FormatOverride="">
+      <Description>
+      </Description>
+      <Remarks>
+      </Remarks>
+    </Attribute>
+    <Attribute Name="Artist" DefaultValue="" MappedIsValidMember="m_IsValidArtist" MappedSetValidName="SetValidArtist" MappedIsValidName="IsValidArtist" MappedIsNilMember="m_IsNilArtist" MappedSetNilName="SetNilArtist" MappedIsNilName="IsNilArtist" MappedMemberName="m_Artist" MappedDisplayName="Artist" MappedSetterName="Artist" MappedGetterName="Artist" FormatOverride="">
+      <Description>
+      </Description>
+      <Remarks>
+      </Remarks>
+    </Attribute>
+    <Attribute Name="Title" DefaultValue="" MappedIsValidMember="m_IsValidTitle" MappedSetValidName="SetValidTitle" MappedIsValidName="IsValidTitle" MappedIsNilMember="m_IsNilTitle" MappedSetNilName="SetNilTitle" MappedIsNilName="IsNilTitle" MappedMemberName="m_Title" MappedDisplayName="Title" MappedSetterName="Title" MappedGetterName="Title" FormatOverride="">
+      <Description>
+      </Description>
+      <Remarks>
+      </Remarks>
+    </Attribute>
+    <Attribute Name="Version" DefaultValue="" MappedIsValidMember="m_IsValidVersion" MappedSetValidName="SetValidVersion" MappedIsValidName="IsValidVersion" MappedIsNilMember="m_IsNilVersion" MappedSetNilName="SetNilVersion" MappedIsNilName="IsNilVersion" MappedMemberName="m_Version" MappedDisplayName="Version" MappedSetterName="Version" MappedGetterName="Version" FormatOverride="">
+      <Description>
+      </Description>
+      <Remarks>
+      </Remarks>
+    </Attribute>
+    <Attribute Name="FormatCode" DefaultValue="" MappedIsValidMember="m_IsValidFormatCode" MappedSetValidName="SetValidFormatCode" MappedIsValidName="IsValidFormatCode" MappedIsNilMember="m_IsNilFormatCode" MappedSetNilName="SetNilFormatCode" MappedIsNilName="IsNilFormatCode" MappedMemberName="m_FormatCode" MappedDisplayName="FormatCode" MappedSetterName="FormatCode" MappedGetterName="FormatCode">
+      <Description>
+      </Description>
+      <Remarks>
+      </Remarks>
+    </Attribute>
+    <Attribute Name="Sequence" DefaultValue="" MappedIsValidMember="m_IsValidSequence" MappedSetValidName="SetValidSequence" MappedIsValidName="IsValidSequence" MappedIsNilMember="m_IsNilSequence" MappedSetNilName="SetNilSequence" MappedIsNilName="IsNilSequence" MappedMemberName="m_Sequence" MappedDisplayName="Sequence" MappedSetterName="Sequence" MappedGetterName="Sequence" FormatOverride="">
+      <Description>
+      </Description>
+      <Remarks>
+      </Remarks>
+    </Attribute>
+    <Attribute Name="SubComponent" DefaultValue="" MappedIsValidMember="m_IsValidSubComponents" MappedSetValidName="SetValidSubComponents" MappedIsValidName="IsValidSubComponents" MappedIsNilMember="m_IsNilSubComponents" MappedSetNilName="SetNilSubComponents" MappedIsNilName="IsNilSubComponents" MappedMemberName="m_SubComponents" MappedDisplayName="SubComponents" MappedSetterName="SubComponents" MappedGetterName="SubComponents">
+      <Description>
+      </Description>
+      <Remarks>
+      </Remarks>
+    </Attribute>
+  </Class>
+  <Class Name="Components" LongName="Components" MappedClassColName="ComponentsCol" MappedClassName="Components">
+    <Description>
+    </Description>
+    <Remarks>
+    </Remarks>
+    <Attribute Name="Component" DefaultValue="" MappedIsValidMember="m_IsValidComponents" MappedSetValidName="SetValidComponents" MappedIsValidName="IsValidComponents" MappedIsNilMember="m_IsNilComponents" MappedSetNilName="SetNilComponents" MappedIsNilName="IsNilComponents" MappedMemberName="m_Components" MappedDisplayName="Components" MappedSetterName="ComponentsA" MappedGetterName="ComponentsA">
+      <Description>
+      </Description>
+      <Remarks>
+      </Remarks>
+    </Attribute>
+  </Class>
+  <Class Name="CoreProductInfo" LongName="CoreProductInfo" MappedClassColName="CoreProductInfoCol" MappedClassName="CoreProductInfo">
+    <Description>
+    </Description>
+    <Remarks>This class exists to provide a base into which other interfaces can be placed, this is necessary because each class is either a sequence, choice or all. Without this class classes deriving from this, may contain elements that are part of a sequence and a choice, this would break the library.</Remarks>
+    <Attribute Name="CPRSProductID" DefaultValue="" MappedIsValidMember="m_IsValidCPRSProductID" MappedSetValidName="SetValidCPRSProductID" MappedIsValidName="IsValidCPRSProductID" MappedIsNilMember="m_IsNilCPRSProductID" MappedSetNilName="SetNilCPRSProductID" MappedIsNilName="IsNilCPRSProductID" MappedMemberName="m_CPRSProductID" MappedDisplayName="CPRSProductID" MappedSetterName="CPRSProductID" MappedGetterName="CPRSProductID" FormatOverride="">
+      <Description>
+      </Description>
+      <Remarks>
+      </Remarks>
+    </Attribute>
+    <Attribute Name="ProductUPC" DefaultValue="" MappedIsValidMember="m_IsValidProductUPC" MappedSetValidName="SetValidProductUPC" MappedIsValidName="IsValidProductUPC" MappedIsNilMember="m_IsNilProductUPC" MappedSetNilName="SetNilProductUPC" MappedIsNilName="IsNilProductUPC" MappedMemberName="m_ProductUPC" MappedDisplayName="ProductUPC" MappedSetterName="ProductUPC" MappedGetterName="ProductUPC" FormatOverride="">
+      <Description>
+      </Description>
+      <Remarks>
+      </Remarks>
+    </Attribute>
+    <Attribute Name="UPV" DefaultValue="" MappedIsValidMember="m_IsValidUPV" MappedSetValidName="SetValidUPV" MappedIsValidName="IsValidUPV" MappedIsNilMember="m_IsNilUPV" MappedSetNilName="SetNilUPV" MappedIsNilName="IsNilUPV" MappedMemberName="m_UPV" MappedDisplayName="UPV" MappedSetterName="UPV" MappedGetterName="UPV" FormatOverride="">
+      <Description>
+      </Description>
+      <Remarks>
+      </Remarks>
+    </Attribute>
+    <Attribute Name="R2ProductID" DefaultValue="" MappedIsValidMember="m_IsValidR2ProductID" MappedSetValidName="SetValidR2ProductID" MappedIsValidName="IsValidR2ProductID" MappedIsNilMember="m_IsNilR2ProductID" MappedSetNilName="SetNilR2ProductID" MappedIsNilName="IsNilR2ProductID" MappedMemberName="m_R2ProductID" MappedDisplayName="R2ProductID" MappedSetterName="R2ProductID" MappedGetterName="R2ProductID" FormatOverride="">
+      <Description>
+      </Description>
+      <Remarks>
+      </Remarks>
+    </Attribute>
+    <Attribute Name="R2ProjectID" DefaultValue="" MappedIsValidMember="m_IsValidR2ProjectID" MappedSetValidName="SetValidR2ProjectID" MappedIsValidName="IsValidR2ProjectID" MappedIsNilMember="m_IsNilR2ProjectID" MappedSetNilName="SetNilR2ProjectID" MappedIsNilName="IsNilR2ProjectID" MappedMemberName="m_R2ProjectID" MappedDisplayName="R2ProjectID" MappedSetterName="R2ProjectID" MappedGetterName="R2ProjectID" FormatOverride="">
+      <Description>
+      </Description>
+      <Remarks>
+      </Remarks>
+    </Attribute>
+    <Attribute Name="R2ConfigID" DefaultValue="" MappedIsValidMember="m_IsValidR2ConfigID" MappedSetValidName="SetValidR2ConfigID" MappedIsValidName="IsValidR2ConfigID" MappedIsNilMember="m_IsNilR2ConfigID" MappedSetNilName="SetNilR2ConfigID" MappedIsNilName="IsNilR2ConfigID" MappedMemberName="m_R2ConfigID" MappedDisplayName="R2ConfigID" MappedSetterName="R2ConfigID" MappedGetterName="R2ConfigID" FormatOverride="">
+      <Description>
+      </Description>
+      <Remarks>
+      </Remarks>
+    </Attribute>
+  </Class>
+  <Class Name="CoreProductInformation" LongName="CoreProductInformation" MappedClassColName="CoreProductInformationCol" MappedClassName="CoreProductInformation">
+    <Description>
+    </Description>
+    <Remarks>This class exists to provide a base into which other interfaces can be placed, this is necessary because each class is either a sequence, choice or all. Without this class classes deriving from this, may contain elements that are part of a sequence and a choice, this would break the library.</Remarks>
+    <Attribute Name="CPRSProductID" DefaultValue="" MappedIsValidMember="m_IsValidCPRSProductID" MappedSetValidName="SetValidCPRSProductID" MappedIsValidName="IsValidCPRSProductID" MappedIsNilMember="m_IsNilCPRSProductID" MappedSetNilName="SetNilCPRSProductID" MappedIsNilName="IsNilCPRSProductID" MappedMemberName="m_CPRSProductID" MappedDisplayName="CPRSProductID" MappedSetterName="CPRSProductID" MappedGetterName="CPRSProductID" FormatOverride="">
+      <Description>
+      </Description>
+      <Remarks>
+      </Remarks>
+    </Attribute>
+    <Attribute Name="ProductUPC" DefaultValue="" MappedIsValidMember="m_IsValidProductUPC" MappedSetValidName="SetValidProductUPC" MappedIsValidName="IsValidProductUPC" MappedIsNilMember="m_IsNilProductUPC" MappedSetNilName="SetNilProductUPC" MappedIsNilName="IsNilProductUPC" MappedMemberName="m_ProductUPC" MappedDisplayName="ProductUPC" MappedSetterName="ProductUPC" MappedGetterName="ProductUPC" FormatOverride="">
+      <Description>
+      </Description>
+      <Remarks>
+      </Remarks>
+    </Attribute>
+    <Attribute Name="UPV" DefaultValue="" MappedIsValidMember="m_IsValidUPV" MappedSetValidName="SetValidUPV" MappedIsValidName="IsValidUPV" MappedIsNilMember="m_IsNilUPV" MappedSetNilName="SetNilUPV" MappedIsNilName="IsNilUPV" MappedMemberName="m_UPV" MappedDisplayName="UPV" MappedSetterName="UPV" MappedGetterName="UPV" FormatOverride="">
+      <Description>
+      </Description>
+      <Remarks>
+      </Remarks>
+    </Attribute>
+    <Attribute Name="R2ProductID" DefaultValue="" MappedIsValidMember="m_IsValidR2ProductID" MappedSetValidName="SetValidR2ProductID" MappedIsValidName="IsValidR2ProductID" MappedIsNilMember="m_IsNilR2ProductID" MappedSetNilName="SetNilR2ProductID" MappedIsNilName="IsNilR2ProductID" MappedMemberName="m_R2ProductID" MappedDisplayName="R2ProductID" MappedSetterName="R2ProductID" MappedGetterName="R2ProductID" FormatOverride="">
+      <Description>
+      </Description>
+      <Remarks>
+      </Remarks>
+    </Attribute>
+    <Attribute Name="R2ProjectID" DefaultValue="" MappedIsValidMember="m_IsValidR2ProjectID" MappedSetValidName="SetValidR2ProjectID" MappedIsValidName="IsValidR2ProjectID" MappedIsNilMember="m_IsNilR2ProjectID" MappedSetNilName="SetNilR2ProjectID" MappedIsNilName="IsNilR2ProjectID" MappedMemberName="m_R2ProjectID" MappedDisplayName="R2ProjectID" MappedSetterName="R2ProjectID" MappedGetterName="R2ProjectID" FormatOverride="">
+      <Description>
+      </Description>
+      <Remarks>
+      </Remarks>
+    </Attribute>
+    <Attribute Name="R2ConfigID" DefaultValue="" MappedIsValidMember="m_IsValidR2ConfigID" MappedSetValidName="SetValidR2ConfigID" MappedIsValidName="IsValidR2ConfigID" MappedIsNilMember="m_IsNilR2ConfigID" MappedSetNilName="SetNilR2ConfigID" MappedIsNilName="IsNilR2ConfigID" MappedMemberName="m_R2ConfigID" MappedDisplayName="R2ConfigID" MappedSetterName="R2ConfigID" MappedGetterName="R2ConfigID" FormatOverride="">
+      <Description>
+      </Description>
+      <Remarks>
+      </Remarks>
+    </Attribute>
+  </Class>
+  <Class Name="Country" LongName="Country" MappedClassColName="CountryCol" MappedClassName="Country">
+    <Description>
+    </Description>
+    <Remarks>
+    </Remarks>
+    <Attribute Name="Name" DefaultValue="" MappedIsValidMember="m_IsValidName" MappedSetValidName="SetValidName" MappedIsValidName="IsValidName" MappedIsNilMember="m_IsNilName" MappedSetNilName="SetNilName" MappedIsNilName="IsNilName" MappedMemberName="m_Name" MappedDisplayName="Name" MappedSetterName="Name" MappedGetterName="Name" FormatOverride="">
+      <Description>
+      </Description>
+      <Remarks>
+      </Remarks>
+    </Attribute>
+    <Attribute Name="ISO" DefaultValue="" MappedIsValidMember="m_IsValidISO" MappedSetValidName="SetValidISO" MappedIsValidName="IsValidISO" MappedIsNilMember="m_IsNilISO" MappedSetNilName="SetNilISO" MappedIsNilName="IsNilISO" MappedMemberName="m_ISO" MappedDisplayName="ISO" MappedSetterName="ISO" MappedGetterName="ISO" FormatOverride="">
+      <Description>
+      </Description>
+      <Remarks>
+      </Remarks>
+    </Attribute>
+  </Class>
+  <Class Name="CPRSReleasingTerritory" LongName="CPRSReleasingTerritory" MappedClassColName="CPRSReleasingTerritoryCol" MappedClassName="CPRSReleasingTerritory">
+    <Description>
+    </Description>
+    <Remarks>
+    </Remarks>
+    <Attribute Name="CPRSReleasingTerritory_Choice" DefaultValue="" MappedIsValidMember="m_IsValidCPRSReleasingTerritory_Choice" MappedSetValidName="SetValidCPRSReleasingTerritory_Choice" MappedIsValidName="IsValidCPRSReleasingTerritory_Choice" MappedIsNilMember="m_IsNilCPRSReleasingTerritory_Choice" MappedSetNilName="SetNilCPRSReleasingTerritory_Choice" MappedIsNilName="IsNilCPRSReleasingTerritory_Choice" MappedMemberName="m_CPRSReleasingTerritory_Choice" MappedDisplayName="CPRSReleasingTerritory_Choice" MappedSetterName="CPRSReleasingTerritory_Choice" MappedGetterName="CPRSReleasingTerritory_Choice">
+      <Description>
+      </Description>
+      <Remarks>
+      </Remarks>
+    </Attribute>
+    <Attribute Name="Name" DefaultValue="" MappedIsValidMember="m_IsValidName" MappedSetValidName="SetValidName" MappedIsValidName="IsValidName" MappedIsNilMember="m_IsNilName" MappedSetNilName="SetNilName" MappedIsNilName="IsNilName" MappedMemberName="m_Name" MappedDisplayName="Name" MappedSetterName="Name" MappedGetterName="Name" FormatOverride="">
+      <Description>
+      </Description>
+      <Remarks>
+      </Remarks>
+    </Attribute>
+  </Class>
+  <Class Name="CPRSReleasingTerritory_Choice" LongName="CPRSReleasingTerritory_Choice" MappedClassColName="CPRSReleasingTerritory_ChoiceCol" MappedClassName="CPRSReleasingTerritory_Choice">
+    <Description>
+    </Description>
+    <Remarks>
+    </Remarks>
+    <Enum Name="TransNat" MappedEnumColName="CPRSReleasingTerritory_Choice_TransNatCol" MappedEnumName="CPRSReleasingTerritory_Choice_TransNat">
+      <Value Value="DGG" MappedValue="DGG" />
+      <Value Value="DEC" MappedValue="DEC" />
+      <Value Value="INT" MappedValue="int_" />
+    </Enum>
+    <Attribute Name="ISO" DefaultValue="" MappedIsValidMember="m_IsValidISO" MappedSetValidName="SetValidISO" MappedIsValidName="IsValidISO" MappedIsNilMember="m_IsNilISO" MappedSetNilName="SetNilISO" MappedIsNilName="IsNilISO" MappedMemberName="m_ISO" MappedDisplayName="ISO" MappedSetterName="ISO" MappedGetterName="ISO" FormatOverride="">
+      <Description>
+      </Description>
+      <Remarks>
+      </Remarks>
+    </Attribute>
+    <Attribute Name="TransNat" DefaultValue="" MappedIsValidMember="m_IsValidTransNat" MappedSetValidName="SetValidTransNat" MappedIsValidName="IsValidTransNat" MappedIsNilMember="m_IsNilTransNat" MappedSetNilName="SetNilTransNat" MappedIsNilName="IsNilTransNat" MappedMemberName="m_TransNat" MappedDisplayName="TransNat" MappedSetterName="TransNat" MappedGetterName="TransNat">
+      <Description>
+      </Description>
+      <Remarks>
+      </Remarks>
+    </Attribute>
+  </Class>
+  <Class Name="DistributionOnly" LongName="DistributionOnly" MappedClassColName="DistributionOnlyCol" MappedClassName="DistributionOnly">
+    <Description>
+    </Description>
+    <Remarks>
+    </Remarks>
+    <Attribute Name="Price" DefaultValue="" MappedIsValidMember="m_IsValidPrice" MappedSetValidName="SetValidPrice" MappedIsValidName="IsValidPrice" MappedIsNilMember="m_IsNilPrice" MappedSetNilName="SetNilPrice" MappedIsNilName="IsNilPrice" MappedMemberName="m_Price" MappedDisplayName="Price" MappedSetterName="Price" MappedGetterName="Price" FormatOverride="">
+      <Description>
+      </Description>
+      <Remarks>
+      </Remarks>
+    </Attribute>
+    <Attribute Name="ReleasingLabel" DefaultValue="" MappedIsValidMember="m_IsValidReleasingLabel" MappedSetValidName="SetValidReleasingLabel" MappedIsValidName="IsValidReleasingLabel" MappedIsNilMember="m_IsNilReleasingLabel" MappedSetNilName="SetNilReleasingLabel" MappedIsNilName="IsNilReleasingLabel" MappedMemberName="m_ReleasingLabel" MappedDisplayName="ReleasingLabel" MappedSetterName="ReleasingLabel" MappedGetterName="ReleasingLabel" FormatOverride="">
+      <Description>
+      </Description>
+      <Remarks>
+      </Remarks>
+    </Attribute>
+    <Attribute Name="LeadTime" DefaultValue="" MappedIsValidMember="m_IsValidLeadTime" MappedSetValidName="SetValidLeadTime" MappedIsValidName="IsValidLeadTime" MappedIsNilMember="m_IsNilLeadTime" MappedSetNilName="SetNilLeadTime" MappedIsNilName="IsNilLeadTime" MappedMemberName="m_LeadTime" MappedDisplayName="LeadTime" MappedSetterName="LeadTime" MappedGetterName="LeadTime" FormatOverride="">
+      <Description>
+      </Description>
+      <Remarks>
+      </Remarks>
+    </Attribute>
+    <Attribute Name="Quantity" DefaultValue="" MappedIsValidMember="m_IsValidQuantity" MappedSetValidName="SetValidQuantity" MappedIsValidName="IsValidQuantity" MappedIsNilMember="m_IsNilQuantity" MappedSetNilName="SetNilQuantity" MappedIsNilName="IsNilQuantity" MappedMemberName="m_Quantity" MappedDisplayName="Quantity" MappedSetterName="Quantity" MappedGetterName="Quantity" FormatOverride="">
+      <Description>
+      </Description>
+      <Remarks>
+      </Remarks>
+    </Attribute>
+    <Attribute Name="OrigCountry" DefaultValue="" MappedIsValidMember="m_IsValidOrigCountry" MappedSetValidName="SetValidOrigCountry" MappedIsValidName="IsValidOrigCountry" MappedIsNilMember="m_IsNilOrigCountry" MappedSetNilName="SetNilOrigCountry" MappedIsNilName="IsNilOrigCountry" MappedMemberName="m_OrigCountry" MappedDisplayName="OrigCountry" MappedSetterName="OrigCountry" MappedGetterName="OrigCountry" FormatOverride="">
+      <Description>
+      </Description>
+      <Remarks>
+      </Remarks>
+    </Attribute>
+    <Attribute Name="Contact" DefaultValue="" MappedIsValidMember="m_IsValidContact" MappedSetValidName="SetValidContact" MappedIsValidName="IsValidContact" MappedIsNilMember="m_IsNilContact" MappedSetNilName="SetNilContact" MappedIsNilName="IsNilContact" MappedMemberName="m_Contact" MappedDisplayName="Contact" MappedSetterName="Contact" MappedGetterName="Contact" FormatOverride="">
+      <Description>
+      </Description>
+      <Remarks>
+      </Remarks>
+    </Attribute>
+  </Class>
+  <Class Name="ICoreProductInfo" LongName="ICoreProductInfo" MappedClassColName="ICoreProductInfoCol" MappedClassName="ICoreProductInfo">
+    <Description>
+    </Description>
+    <Remarks>This class exists to provide a base into which other interfaces can be placed, this is necessary because each class is either a sequence, choice or all. Without this class classes deriving from this, may contain elements that are part of a sequence and a choice, this would break the library.</Remarks>
+    <Attribute Name="CPRSProductID" DefaultValue="" MappedIsValidMember="m_IsValidCPRSProductID" MappedSetValidName="SetValidCPRSProductID" MappedIsValidName="IsValidCPRSProductID" MappedIsNilMember="m_IsNilCPRSProductID" MappedSetNilName="SetNilCPRSProductID" MappedIsNilName="IsNilCPRSProductID" MappedMemberName="m_CPRSProductID" MappedDisplayName="CPRSProductID" MappedSetterName="CPRSProductID" MappedGetterName="CPRSProductID" FormatOverride="">
+      <Description>
+      </Description>
+      <Remarks>
+      </Remarks>
+    </Attribute>
+    <Attribute Name="ProductUPC" DefaultValue="" MappedIsValidMember="m_IsValidProductUPC" MappedSetValidName="SetValidProductUPC" MappedIsValidName="IsValidProductUPC" MappedIsNilMember="m_IsNilProductUPC" MappedSetNilName="SetNilProductUPC" MappedIsNilName="IsNilProductUPC" MappedMemberName="m_ProductUPC" MappedDisplayName="ProductUPC" MappedSetterName="ProductUPC" MappedGetterName="ProductUPC" FormatOverride="">
+      <Description>
+      </Description>
+      <Remarks>
+      </Remarks>
+    </Attribute>
+    <Attribute Name="UPV" DefaultValue="" MappedIsValidMember="m_IsValidUPV" MappedSetValidName="SetValidUPV" MappedIsValidName="IsValidUPV" MappedIsNilMember="m_IsNilUPV" MappedSetNilName="SetNilUPV" MappedIsNilName="IsNilUPV" MappedMemberName="m_UPV" MappedDisplayName="UPV" MappedSetterName="UPV" MappedGetterName="UPV" FormatOverride="">
+      <Description>
+      </Description>
+      <Remarks>
+      </Remarks>
+    </Attribute>
+    <Attribute Name="R2ProductID" DefaultValue="" MappedIsValidMember="m_IsValidR2ProductID" MappedSetValidName="SetValidR2ProductID" MappedIsValidName="IsValidR2ProductID" MappedIsNilMember="m_IsNilR2ProductID" MappedSetNilName="SetNilR2ProductID" MappedIsNilName="IsNilR2ProductID" MappedMemberName="m_R2ProductID" MappedDisplayName="R2ProductID" MappedSetterName="R2ProductID" MappedGetterName="R2ProductID" FormatOverride="">
+      <Description>
+      </Description>
+      <Remarks>
+      </Remarks>
+    </Attribute>
+    <Attribute Name="R2ProjectID" DefaultValue="" MappedIsValidMember="m_IsValidR2ProjectID" MappedSetValidName="SetValidR2ProjectID" MappedIsValidName="IsValidR2ProjectID" MappedIsNilMember="m_IsNilR2ProjectID" MappedSetNilName="SetNilR2ProjectID" MappedIsNilName="IsNilR2ProjectID" MappedMemberName="m_R2ProjectID" MappedDisplayName="R2ProjectID" MappedSetterName="R2ProjectID" MappedGetterName="R2ProjectID" FormatOverride="">
+      <Description>
+      </Description>
+      <Remarks>
+      </Remarks>
+    </Attribute>
+    <Attribute Name="R2ConfigID" DefaultValue="" MappedIsValidMember="m_IsValidR2ConfigID" MappedSetValidName="SetValidR2ConfigID" MappedIsValidName="IsValidR2ConfigID" MappedIsNilMember="m_IsNilR2ConfigID" MappedSetNilName="SetNilR2ConfigID" MappedIsNilName="IsNilR2ConfigID" MappedMemberName="m_R2ConfigID" MappedDisplayName="R2ConfigID" MappedSetterName="R2ConfigID" MappedGetterName="R2ConfigID" FormatOverride="">
+      <Description>
+      </Description>
+      <Remarks>
+      </Remarks>
+    </Attribute>
+  </Class>
+  <Class Name="ILocalVersionType" LongName="ILocalVersionType" MappedClassColName="ILocalVersionTypeCol" MappedClassName="ILocalVersionType">
+    <Description>
+    </Description>
+    <Remarks>This class exists to provide a base into which other interfaces can be placed, this is necessary because each class is either a sequence, choice or all. Without this class classes deriving from this, may contain elements that are part of a sequence and a choice, this would break the library.</Remarks>
+    <Attribute Name="LLVersionID" DefaultValue="" MappedIsValidMember="m_IsValidLLVersionID" MappedSetValidName="SetValidLLVersionID" MappedIsValidName="IsValidLLVersionID" MappedIsNilMember="m_IsNilLLVersionID" MappedSetNilName="SetNilLLVersionID" MappedIsNilName="IsNilLLVersionID" MappedMemberName="m_LLVersionID" MappedDisplayName="LLVersionID" MappedSetterName="LLVersionID" MappedGetterName="LLVersionID" FormatOverride="">
+      <Description>
+      </Description>
+      <Remarks>
+      </Remarks>
+    </Attribute>
+    <Attribute Name="Country" DefaultValue="" MappedIsValidMember="m_IsValidCountry" MappedSetValidName="SetValidCountry" MappedIsValidName="IsValidCountry" MappedIsNilMember="m_IsNilCountry" MappedSetNilName="SetNilCountry" MappedIsNilName="IsNilCountry" MappedMemberName="m_Country" MappedDisplayName="Country" MappedSetterName="Country" MappedGetterName="Country">
+      <Description>
+      </Description>
+      <Remarks>
+      </Remarks>
+    </Attribute>
+    <Attribute Name="ReleaseDate" DefaultValue="" MappedIsValidMember="m_IsValidReleaseDate" MappedSetValidName="SetValidReleaseDate" MappedIsValidName="IsValidReleaseDate" MappedIsNilMember="m_IsNilReleaseDate" MappedSetNilName="SetNilReleaseDate" MappedIsNilName="IsNilReleaseDate" MappedMemberName="m_ReleaseDate" MappedDisplayName="ReleaseDate" MappedSetterName="ReleaseDate" MappedGetterName="ReleaseDate" FormatOverride="">
+      <Description>
+      </Description>
+      <Remarks>
+      </Remarks>
+    </Attribute>
+    <Attribute Name="InitialOrders" DefaultValue="" MappedIsValidMember="m_IsValidInitialOrders" MappedSetValidName="SetValidInitialOrders" MappedIsValidName="IsValidInitialOrders" MappedIsNilMember="m_IsNilInitialOrders" MappedSetNilName="SetNilInitialOrders" MappedIsNilName="IsNilInitialOrders" MappedMemberName="m_InitialOrders" MappedDisplayName="InitialOrders" MappedSetterName="InitialOrders" MappedGetterName="InitialOrders" FormatOverride="">
+      <Description>
+      </Description>
+      <Remarks>
+      </Remarks>
+    </Attribute>
+    <Attribute Name="InitialOrderValidation" DefaultValue="" MappedIsValidMember="m_IsValidInitialOrderValidation" MappedSetValidName="SetValidInitialOrderValidation" MappedIsValidName="IsValidInitialOrderValidation" MappedIsNilMember="m_IsNilInitialOrderValidation" MappedSetNilName="SetNilInitialOrderValidation" MappedIsNilName="IsNilInitialOrderValidation" MappedMemberName="m_InitialOrderValidation" MappedDisplayName="InitialOrderValidation" MappedSetterName="InitialOrderValidation" MappedGetterName="InitialOrderValidation">
+      <Description>
+      </Description>
+      <Remarks>
+      </Remarks>
+    </Attribute>
+    <Attribute Name="BoMID" DefaultValue="" MappedIsValidMember="m_IsValidBoMID" MappedSetValidName="SetValidBoMID" MappedIsValidName="IsValidBoMID" MappedIsNilMember="m_IsNilBoMID" MappedSetNilName="SetNilBoMID" MappedIsNilName="IsNilBoMID" MappedMemberName="m_BoMID" MappedDisplayName="BoMID" MappedSetterName="BoMID" MappedGetterName="BoMID" FormatOverride="">
+      <Description>
+      </Description>
+      <Remarks>
+      </Remarks>
+    </Attribute>
+    <Attribute Name="Comments" DefaultValue="" MappedIsValidMember="m_IsValidComments" MappedSetValidName="SetValidComments" MappedIsValidName="IsValidComments" MappedIsNilMember="m_IsNilComments" MappedSetNilName="SetNilComments" MappedIsNilName="IsNilComments" MappedMemberName="m_Comments" MappedDisplayName="Comments" MappedSetterName="Comments" MappedGetterName="Comments" FormatOverride="">
+      <Description>
+      </Description>
+      <Remarks>
+      </Remarks>
+    </Attribute>
+    <Attribute Name="ReleasingLabel" DefaultValue="" MappedIsValidMember="m_IsValidReleasingLabel" MappedSetValidName="SetValidReleasingLabel" MappedIsValidName="IsValidReleasingLabel" MappedIsNilMember="m_IsNilReleasingLabel" MappedSetNilName="SetNilReleasingLabel" MappedIsNilName="IsNilReleasingLabel" MappedMemberName="m_ReleasingLabel" MappedDisplayName="ReleasingLabel" MappedSetterName="ReleasingLabel" MappedGetterName="ReleasingLabel">
+      <Description>
+      </Description>
+      <Remarks>
+      </Remarks>
+    </Attribute>
+    <Attribute Name="LocalCatNo" DefaultValue="" MappedIsValidMember="m_IsValidLocalCatNo" MappedSetValidName="SetValidLocalCatNo" MappedIsValidName="IsValidLocalCatNo" MappedIsNilMember="m_IsNilLocalCatNo" MappedSetNilName="SetNilLocalCatNo" MappedIsNilName="IsNilLocalCatNo" MappedMemberName="m_LocalCatNo" MappedDisplayName="LocalCatNo" MappedSetterName="LocalCatNo" MappedGetterName="LocalCatNo" FormatOverride="">
+      <Description>
+      </Description>
+      <Remarks>
+      </Remarks>
+    </Attribute>
+    <Attribute Name="VS" DefaultValue="" MappedIsValidMember="m_IsValidVS" MappedSetValidName="SetValidVS" MappedIsValidName="IsValidVS" MappedIsNilMember="m_IsNilVS" MappedSetNilName="SetNilVS" MappedIsNilName="IsNilVS" MappedMemberName="m_VS" MappedDisplayName="VS" MappedSetterName="VS" MappedGetterName="VS" FormatOverride="">
+      <Description>
+      </Description>
+      <Remarks>
+      </Remarks>
+    </Attribute>
+    <Attribute Name="LG" DefaultValue="" MappedIsValidMember="m_IsValidLG" MappedSetValidName="SetValidLG" MappedIsValidName="IsValidLG" MappedIsNilMember="m_IsNilLG" MappedSetNilName="SetNilLG" MappedIsNilName="IsNilLG" MappedMemberName="m_LG" MappedDisplayName="LG" MappedSetterName="LG" MappedGetterName="LG" FormatOverride="">
+      <Description>
+      </Description>
+      <Remarks>
+      </Remarks>
+    </Attribute>
+    <Attribute Name="CC" DefaultValue="" MappedIsValidMember="m_IsValidCC" MappedSetValidName="SetValidCC" MappedIsValidName="IsValidCC" MappedIsNilMember="m_IsNilCC" MappedSetNilName="SetNilCC" MappedIsNilName="IsNilCC" MappedMemberName="m_CC" MappedDisplayName="CC" MappedSetterName="CC" MappedGetterName="CC" FormatOverride="">
+      <Description>
+      </Description>
+      <Remarks>
+      </Remarks>
+    </Attribute>
+    <Attribute Name="UPV" DefaultValue="" MappedIsValidMember="m_IsValidUPV" MappedSetValidName="SetValidUPV" MappedIsValidName="IsValidUPV" MappedIsNilMember="m_IsNilUPV" MappedSetNilName="SetNilUPV" MappedIsNilName="IsNilUPV" MappedMemberName="m_UPV" MappedDisplayName="UPV" MappedSetterName="UPV" MappedGetterName="UPV" FormatOverride="">
+      <Description>
+      </Description>
+      <Remarks>
+      </Remarks>
+    </Attribute>
+    <Attribute Name="LocalRowCreationDate" DefaultValue="" MappedIsValidMember="m_IsValidLocalRowCreationDate" MappedSetValidName="SetValidLocalRowCreationDate" MappedIsValidName="IsValidLocalRowCreationDate" MappedIsNilMember="m_IsNilLocalRowCreationDate" MappedSetNilName="SetNilLocalRowCreationDate" MappedIsNilName="IsNilLocalRowCreationDate" MappedMemberName="m_LocalRowCreationDate" MappedDisplayName="LocalRowCreationDate" MappedSetterName="LocalRowCreationDate" MappedGetterName="LocalRowCreationDate" FormatOverride="">
+      <Description>
+      </Description>
+      <Remarks>
+      </Remarks>
+    </Attribute>
+    <Attribute Name="LocalRowPushedToR2" DefaultValue="" MappedIsValidMember="m_IsValidLocalRowPushedToR2" MappedSetValidName="SetValidLocalRowPushedToR2" MappedIsValidName="IsValidLocalRowPushedToR2" MappedIsNilMember="m_IsNilLocalRowPushedToR2" MappedSetNilName="SetNilLocalRowPushedToR2" MappedIsNilName="IsNilLocalRowPushedToR2" MappedMemberName="m_LocalRowPushedToR2" MappedDisplayName="LocalRowPushedToR2" MappedSetterName="LocalRowPushedToR2" MappedGetterName="LocalRowPushedToR2" FormatOverride="">
+      <Description>
+      </Description>
+      <Remarks>
+      </Remarks>
+    </Attribute>
+  </Class>
+  <Class Name="IMS" LongName="IMS" MappedClassColName="IMSCol" MappedClassName="IMS">
+    <Description>
+    </Description>
+    <Remarks>
+    </Remarks>
+    <Attribute Name="SupWarehse" DefaultValue="" MappedIsValidMember="m_IsValidSupWarehse" MappedSetValidName="SetValidSupWarehse" MappedIsValidName="IsValidSupWarehse" MappedIsNilMember="m_IsNilSupWarehse" MappedSetNilName="SetNilSupWarehse" MappedIsNilName="IsNilSupWarehse" MappedMemberName="m_SupWarehse" MappedDisplayName="SupWarehse" MappedSetterName="SupWarehse" MappedGetterName="SupWarehse">
+      <Description>
+      </Description>
+      <Remarks>
+      </Remarks>
+    </Attribute>
+    <Attribute Name="Licensee" DefaultValue="" MappedIsValidMember="m_IsValidLicensee" MappedSetValidName="SetValidLicensee" MappedIsValidName="IsValidLicensee" MappedIsNilMember="m_IsNilLicensee" MappedSetNilName="SetNilLicensee" MappedIsNilName="IsNilLicensee" MappedMemberName="m_Licensee" MappedDisplayName="Licensee" MappedSetterName="Licensee" MappedGetterName="Licensee">
+      <Description>
+      </Description>
+      <Remarks>
+      </Remarks>
+    </Attribute>
+    <Attribute Name="IniOrdEst" DefaultValue="" MappedIsValidMember="m_IsValidIniOrdEst" MappedSetValidName="SetValidIniOrdEst" MappedIsValidName="IsValidIniOrdEst" MappedIsNilMember="m_IsNilIniOrdEst" MappedSetNilName="SetNilIniOrdEst" MappedIsNilName="IsNilIniOrdEst" MappedMemberName="m_IniOrdEst" MappedDisplayName="IniOrdEst" MappedSetterName="IniOrdEst" MappedGetterName="IniOrdEst" FormatOverride="">
+      <Description>
+      </Description>
+      <Remarks>
+      </Remarks>
+    </Attribute>
+  </Class>
+  <Class Name="InitialOrderApproval" LongName="InitialOrderApproval" MappedClassColName="InitialOrderApprovalCol" MappedClassName="InitialOrderApproval">
+    <Description>
+    </Description>
+    <Remarks>
+    </Remarks>
+    <Enum Name="Status" MappedEnumColName="InitialOrderApproval_StatusCol" MappedEnumName="InitialOrderApproval_Status">
+      <Value Value="NotRequired" MappedValue="NotRequired" />
+      <Value Value="AwaitingApproval" MappedValue="AwaitingApproval" />
+      <Value Value="Approved" MappedValue="Approved" />
+      <Value Value="Rejected" MappedValue="Rejected" />
+    </Enum>
+    <Attribute Name="Status" DefaultValue="" MappedIsValidMember="m_IsValidStatus" MappedSetValidName="SetValidStatus" MappedIsValidName="IsValidStatus" MappedIsNilMember="m_IsNilStatus" MappedSetNilName="SetNilStatus" MappedIsNilName="IsNilStatus" MappedMemberName="m_Status" MappedDisplayName="Status" MappedSetterName="Status" MappedGetterName="Status">
+      <Description>
+      </Description>
+      <Remarks>
+      </Remarks>
+    </Attribute>
+    <Attribute Name="Comment" DefaultValue="" MappedIsValidMember="m_IsValidComment" MappedSetValidName="SetValidComment" MappedIsValidName="IsValidComment" MappedIsNilMember="m_IsNilComment" MappedSetNilName="SetNilComment" MappedIsNilName="IsNilComment" MappedMemberName="m_Comment" MappedDisplayName="Comment" MappedSetterName="Comment" MappedGetterName="Comment" FormatOverride="">
+      <Description>
+      </Description>
+      <Remarks>
+      </Remarks>
+    </Attribute>
+    <Attribute Name="StatusDate" DefaultValue="" MappedIsValidMember="m_IsValidStatusDate" MappedSetValidName="SetValidStatusDate" MappedIsValidName="IsValidStatusDate" MappedIsNilMember="m_IsNilStatusDate" MappedSetNilName="SetNilStatusDate" MappedIsNilName="IsNilStatusDate" MappedMemberName="m_StatusDate" MappedDisplayName="StatusDate" MappedSetterName="StatusDate" MappedGetterName="StatusDate" FormatOverride="">
+      <Description>
+      </Description>
+      <Remarks>
+      </Remarks>
+    </Attribute>
+    <Attribute Name="Approver" DefaultValue="" MappedIsValidMember="m_IsValidApprover" MappedSetValidName="SetValidApprover" MappedIsValidName="IsValidApprover" MappedIsNilMember="m_IsNilApprover" MappedSetNilName="SetNilApprover" MappedIsNilName="IsNilApprover" MappedMemberName="m_Approver" MappedDisplayName="Approver" MappedSetterName="Approver" MappedGetterName="Approver">
+      <Description>
+      </Description>
+      <Remarks>
+      </Remarks>
+    </Attribute>
+  </Class>
+  <Class Name="InitialOrderValidation_Nillable" LongName="InitialOrderValidation_Nillable" MappedClassColName="InitialOrderValidation_NillableCol" MappedClassName="InitialOrderValidation_Nillable">
+    <Description>
+    </Description>
+    <Remarks>
+    </Remarks>
+    <Enum Name="Status" MappedEnumColName="InitialOrderValidation_Nillable_StatusCol" MappedEnumName="InitialOrderValidation_Nillable_Status">
+      <Value Value="NotValidated" MappedValue="NotValidated" />
+      <Value Value="Validated" MappedValue="Validated" />
+    </Enum>
+    <Attribute Name="Status" DefaultValue="" MappedIsValidMember="m_IsValidStatus" MappedSetValidName="SetValidStatus" MappedIsValidName="IsValidStatus" MappedIsNilMember="m_IsNilStatus" MappedSetNilName="SetNilStatus" MappedIsNilName="IsNilStatus" MappedMemberName="m_Status" MappedDisplayName="Status" MappedSetterName="Status" MappedGetterName="Status">
+      <Description>
+      </Description>
+      <Remarks>
+      </Remarks>
+    </Attribute>
+    <Attribute Name="ValidationDate" DefaultValue="" MappedIsValidMember="m_IsValidValidationDate" MappedSetValidName="SetValidValidationDate" MappedIsValidName="IsValidValidationDate" MappedIsNilMember="m_IsNilValidationDate" MappedSetNilName="SetNilValidationDate" MappedIsNilName="IsNilValidationDate" MappedMemberName="m_ValidationDate" MappedDisplayName="ValidationDate" MappedSetterName="ValidationDate" MappedGetterName="ValidationDate" FormatOverride="">
+      <Description>
+      </Description>
+      <Remarks>
+      </Remarks>
+    </Attribute>
+    <Attribute Name="Validator" DefaultValue="" MappedIsValidMember="m_IsValidValidator" MappedSetValidName="SetValidValidator" MappedIsValidName="IsValidValidator" MappedIsNilMember="m_IsNilValidator" MappedSetNilName="SetNilValidator" MappedIsNilName="IsNilValidator" MappedMemberName="m_Validator" MappedDisplayName="Validator" MappedSetterName="Validator" MappedGetterName="Validator">
+      <Description>
+      </Description>
+      <Remarks>
+      </Remarks>
+    </Attribute>
+  </Class>
+  <Class Name="IProductCommon" LongName="IProductCommon" MappedClassColName="IProductCommonCol" MappedClassName="IProductCommon">
+    <Description>
+    </Description>
+    <Remarks>This class exists to provide a base into which other interfaces can be placed, this is necessary because each class is either a sequence, choice or all. Without this class classes deriving from this, may contain elements that are part of a sequence and a choice, this would break the library.</Remarks>
+    <Enum Name="CPRSProductType" MappedEnumColName="IProductCommon_CPRSProductTypeCol" MappedEnumName="IProductCommon_CPRSProductType">
+      <Value Value="Promo" MappedValue="Promo" />
+      <Value Value="Commercial" MappedValue="Commercial" />
+      <Value Value="Exclusive" MappedValue="Exclusive" />
+      <Value Value="Import" MappedValue="Import" />
+      <Value Value="IMS" MappedValue="IMS" />
+      <Value Value="Distribution" MappedValue="Distribution" />
+      <Value Value="ePD" MappedValue="EPD" />
+    </Enum>
+    <Enum Name="CPRSStatus" MappedEnumColName="IProductCommon_CPRSStatusCol" MappedEnumName="IProductCommon_CPRSStatus">
+      <Value Value="Error" MappedValue="Error" />
+      <Value Value="Scheduled" MappedValue="Scheduled" />
+      <Value Value="InProgress" MappedValue="InProgress" />
+      <Value Value="Deleted" MappedValue="Deleted" />
+    </Enum>
+    <Attribute Name="ReleaseDate" DefaultValue="" MappedIsValidMember="m_IsValidReleaseDate" MappedSetValidName="SetValidReleaseDate" MappedIsValidName="IsValidReleaseDate" MappedIsNilMember="m_IsNilReleaseDate" MappedSetNilName="SetNilReleaseDate" MappedIsNilName="IsNilReleaseDate" MappedMemberName="m_ReleaseDate" MappedDisplayName="ReleaseDate" MappedSetterName="ReleaseDate" MappedGetterName="ReleaseDate" FormatOverride="">
+      <Description>
+      </Description>
+      <Remarks>
+      </Remarks>
+    </Attribute>
+    <Attribute Name="CPRSVersionTitle" DefaultValue="" MappedIsValidMember="m_IsValidCPRSVersionTitle" MappedSetValidName="SetValidCPRSVersionTitle" MappedIsValidName="IsValidCPRSVersionTitle" MappedIsNilMember="m_IsNilCPRSVersionTitle" MappedSetNilName="SetNilCPRSVersionTitle" MappedIsNilName="IsNilCPRSVersionTitle" MappedMemberName="m_CPRSVersionTitle" MappedDisplayName="CPRSVersionTitle" MappedSetterName="CPRSVersionTitle" MappedGetterName="CPRSVersionTitle" FormatOverride="">
+      <Description>
+      </Description>
+      <Remarks>
+      </Remarks>
+    </Attribute>
+    <Attribute Name="CPRSProductType" DefaultValue="" MappedIsValidMember="m_IsValidCPRSProductType" MappedSetValidName="SetValidCPRSProductType" MappedIsValidName="IsValidCPRSProductType" MappedIsNilMember="m_IsNilCPRSProductType" MappedSetNilName="SetNilCPRSProductType" MappedIsNilName="IsNilCPRSProductType" MappedMemberName="m_CPRSProductType" MappedDisplayName="CPRSProductType" MappedSetterName="CPRSProductType" MappedGetterName="CPRSProductType">
+      <Description>
+      </Description>
+      <Remarks>
+      </Remarks>
+    </Attribute>
+    <Attribute Name="CPRSStatus" DefaultValue="" MappedIsValidMember="m_IsValidCPRSStatus" MappedSetValidName="SetValidCPRSStatus" MappedIsValidName="IsValidCPRSStatus" MappedIsNilMember="m_IsNilCPRSStatus" MappedSetNilName="SetNilCPRSStatus" MappedIsNilName="IsNilCPRSStatus" MappedMemberName="m_CPRSStatus" MappedDisplayName="CPRSStatus" MappedSetterName="CPRSStatus" MappedGetterName="CPRSStatus">
+      <Description>
+      </Description>
+      <Remarks>
+      </Remarks>
+    </Attribute>
+    <Attribute Name="CPRSFormatCode" DefaultValue="" MappedIsValidMember="m_IsValidCPRSFormatCode" MappedSetValidName="SetValidCPRSFormatCode" MappedIsValidName="IsValidCPRSFormatCode" MappedIsNilMember="m_IsNilCPRSFormatCode" MappedSetNilName="SetNilCPRSFormatCode" MappedIsNilName="IsNilCPRSFormatCode" MappedMemberName="m_CPRSFormatCode" MappedDisplayName="CPRSFormatCode" MappedSetterName="CPRSFormatCode" MappedGetterName="CPRSFormatCode">
+      <Description>
+      </Description>
+      <Remarks>
+      </Remarks>
+    </Attribute>
+    <Attribute Name="CPRSConfigID" DefaultValue="" MappedIsValidMember="m_IsValidCPRSConfigID" MappedSetValidName="SetValidCPRSConfigID" MappedIsValidName="IsValidCPRSConfigID" MappedIsNilMember="m_IsNilCPRSConfigID" MappedSetNilName="SetNilCPRSConfigID" MappedIsNilName="IsNilCPRSConfigID" MappedMemberName="m_CPRSConfigID" MappedDisplayName="CPRSConfigID" MappedSetterName="CPRSConfigID" MappedGetterName="CPRSConfigID" FormatOverride="">
+      <Description>
+      </Description>
+      <Remarks>
+      </Remarks>
+    </Attribute>
+    <Attribute Name="Manufacturers" DefaultValue="" MappedIsValidMember="m_IsValidManufacturers" MappedSetValidName="SetValidManufacturers" MappedIsValidName="IsValidManufacturers" MappedIsNilMember="m_IsNilManufacturers" MappedSetNilName="SetNilManufacturers" MappedIsNilName="IsNilManufacturers" MappedMemberName="m_Manufacturers" MappedDisplayName="Manufacturers" MappedSetterName="Manufacturers" MappedGetterName="Manufacturers">
+      <Description>
+      </Description>
+      <Remarks>
+      </Remarks>
+    </Attribute>
+    <Attribute Name="ManufactureLocation" DefaultValue="" MappedIsValidMember="m_IsValidManufactureLocation" MappedSetValidName="SetValidManufactureLocation" MappedIsValidName="IsValidManufactureLocation" MappedIsNilMember="m_IsNilManufactureLocation" MappedSetNilName="SetNilManufactureLocation" MappedIsNilName="IsNilManufactureLocation" MappedMemberName="m_ManufactureLocation" MappedDisplayName="ManufactureLocation" MappedSetterName="ManufactureLocation" MappedGetterName="ManufactureLocation">
+      <Description>
+      </Description>
+      <Remarks>
+      </Remarks>
+    </Attribute>
+    <Attribute Name="CPRSPriceCode" DefaultValue="" MappedIsValidMember="m_IsValidCPRSPriceCode" MappedSetValidName="SetValidCPRSPriceCode" MappedIsValidName="IsValidCPRSPriceCode" MappedIsNilMember="m_IsNilCPRSPriceCode" MappedSetNilName="SetNilCPRSPriceCode" MappedIsNilName="IsNilCPRSPriceCode" MappedMemberName="m_CPRSPriceCode" MappedDisplayName="CPRSPriceCode" MappedSetterName="CPRSPriceCode" MappedGetterName="CPRSPriceCode" FormatOverride="">
+      <Description>
+      </Description>
+      <Remarks>
+      </Remarks>
+    </Attribute>
+    <Attribute Name="Comments" DefaultValue="" MappedIsValidMember="m_IsValidComments" MappedSetValidName="SetValidComments" MappedIsValidName="IsValidComments" MappedIsNilMember="m_IsNilComments" MappedSetNilName="SetNilComments" MappedIsNilName="IsNilComments" MappedMemberName="m_Comments" MappedDisplayName="Comments" MappedSetterName="Comments" MappedGetterName="Comments" FormatOverride="">
+      <Description>
+      </Description>
+      <Remarks>
+      </Remarks>
+    </Attribute>
+  </Class>
+  <Class Name="IProductMedium" LongName="IProductMedium" MappedClassColName="IProductMediumCol" MappedClassName="IProductMedium">
+    <Description>
+    </Description>
+    <Remarks>This class exists to provide a base into which other interfaces can be placed, this is necessary because each class is either a sequence, choice or all. Without this class classes deriving from this, may contain elements that are part of a sequence and a choice, this would break the library.</Remarks>
+    <Enum Name="ProductMedium" MappedEnumColName="IProductMedium_ProductMediumCol" MappedEnumName="IProductMedium_ProductMedium">
+      <Value Value="Physical" MappedValue="Physical" />
+      <Value Value="Digital" MappedValue="Digital" />
+    </Enum>
+    <Attribute Name="ProductMedium" DefaultValue="" MappedIsValidMember="m_IsValidProductMedium" MappedSetValidName="SetValidProductMedium" MappedIsValidName="IsValidProductMedium" MappedIsNilMember="m_IsNilProductMedium" MappedSetNilName="SetNilProductMedium" MappedIsNilName="IsNilProductMedium" MappedMemberName="m_ProductMedium" MappedDisplayName="ProductMedium" MappedSetterName="ProductMediumA" MappedGetterName="ProductMediumA">
+      <Description>
+      </Description>
+      <Remarks>
+      </Remarks>
+    </Attribute>
+  </Class>
+  <Class Name="LabelType" LongName="LabelType" MappedClassColName="LabelTypeCol" MappedClassName="LabelType">
+    <Description>
+    </Description>
+    <Remarks>
+    </Remarks>
+    <Attribute Name="LabelID" DefaultValue="" MappedIsValidMember="m_IsValidLabelID" MappedSetValidName="SetValidLabelID" MappedIsValidName="IsValidLabelID" MappedIsNilMember="m_IsNilLabelID" MappedSetNilName="SetNilLabelID" MappedIsNilName="IsNilLabelID" MappedMemberName="m_LabelID" MappedDisplayName="LabelID" MappedSetterName="LabelID" MappedGetterName="LabelID" FormatOverride="">
+      <Description>
+      </Description>
+      <Remarks>
+      </Remarks>
+    </Attribute>
+    <Attribute Name="LabelName" DefaultValue="" MappedIsValidMember="m_IsValidLabelName" MappedSetValidName="SetValidLabelName" MappedIsValidName="IsValidLabelName" MappedIsNilMember="m_IsNilLabelName" MappedSetNilName="SetNilLabelName" MappedIsNilName="IsNilLabelName" MappedMemberName="m_LabelName" MappedDisplayName="LabelName" MappedSetterName="LabelName" MappedGetterName="LabelName" FormatOverride="">
+      <Description>
+      </Description>
+      <Remarks>
+      </Remarks>
+    </Attribute>
+  </Class>
+  <Class Name="LocalVersion" LongName="LocalVersion" MappedClassColName="LocalVersionCol" MappedClassName="LocalVersion">
+    <Description>
+    </Description>
+    <Remarks>
+    </Remarks>
+    <Attribute Name="LLVersionID" DefaultValue="" MappedIsValidMember="m_IsValidLLVersionID" MappedSetValidName="SetValidLLVersionID" MappedIsValidName="IsValidLLVersionID" MappedIsNilMember="m_IsNilLLVersionID" MappedSetNilName="SetNilLLVersionID" MappedIsNilName="IsNilLLVersionID" MappedMemberName="m_LLVersionID" MappedDisplayName="LLVersionID" MappedSetterName="LLVersionID" MappedGetterName="LLVersionID" FormatOverride="">
+      <Description>
+      </Description>
+      <Remarks>
+      </Remarks>
+    </Attribute>
+    <Attribute Name="Country" DefaultValue="" MappedIsValidMember="m_IsValidCountry" MappedSetValidName="SetValidCountry" MappedIsValidName="IsValidCountry" MappedIsNilMember="m_IsNilCountry" MappedSetNilName="SetNilCountry" MappedIsNilName="IsNilCountry" MappedMemberName="m_Country" MappedDisplayName="Country" MappedSetterName="Country" MappedGetterName="Country">
+      <Description>
+      </Description>
+      <Remarks>
+      </Remarks>
+    </Attribute>
+    <Attribute Name="ReleaseDate" DefaultValue="" MappedIsValidMember="m_IsValidReleaseDate" MappedSetValidName="SetValidReleaseDate" MappedIsValidName="IsValidReleaseDate" MappedIsNilMember="m_IsNilReleaseDate" MappedSetNilName="SetNilReleaseDate" MappedIsNilName="IsNilReleaseDate" MappedMemberName="m_ReleaseDate" MappedDisplayName="ReleaseDate" MappedSetterName="ReleaseDate" MappedGetterName="ReleaseDate" FormatOverride="">
+      <Description>
+      </Description>
+      <Remarks>
+      </Remarks>
+    </Attribute>
+    <Attribute Name="InitialOrders" DefaultValue="" MappedIsValidMember="m_IsValidInitialOrders" MappedSetValidName="SetValidInitialOrders" MappedIsValidName="IsValidInitialOrders" MappedIsNilMember="m_IsNilInitialOrders" MappedSetNilName="SetNilInitialOrders" MappedIsNilName="IsNilInitialOrders" MappedMemberName="m_InitialOrders" MappedDisplayName="InitialOrders" MappedSetterName="InitialOrders" MappedGetterName="InitialOrders" FormatOverride="">
+      <Description>
+      </Description>
+      <Remarks>
+      </Remarks>
+    </Attribute>
+    <Attribute Name="InitialOrderValidation" DefaultValue="" MappedIsValidMember="m_IsValidInitialOrderValidation" MappedSetValidName="SetValidInitialOrderValidation" MappedIsValidName="IsValidInitialOrderValidation" MappedIsNilMember="m_IsNilInitialOrderValidation" MappedSetNilName="SetNilInitialOrderValidation" MappedIsNilName="IsNilInitialOrderValidation" MappedMemberName="m_InitialOrderValidation" MappedDisplayName="InitialOrderValidation" MappedSetterName="InitialOrderValidation" MappedGetterName="InitialOrderValidation">
+      <Description>
+      </Description>
+      <Remarks>
+      </Remarks>
+    </Attribute>
+    <Attribute Name="BoMID" DefaultValue="" MappedIsValidMember="m_IsValidBoMID" MappedSetValidName="SetValidBoMID" MappedIsValidName="IsValidBoMID" MappedIsNilMember="m_IsNilBoMID" MappedSetNilName="SetNilBoMID" MappedIsNilName="IsNilBoMID" MappedMemberName="m_BoMID" MappedDisplayName="BoMID" MappedSetterName="BoMID" MappedGetterName="BoMID" FormatOverride="">
+      <Description>
+      </Description>
+      <Remarks>
+      </Remarks>
+    </Attribute>
+    <Attribute Name="Comments" DefaultValue="" MappedIsValidMember="m_IsValidComments" MappedSetValidName="SetValidComments" MappedIsValidName="IsValidComments" MappedIsNilMember="m_IsNilComments" MappedSetNilName="SetNilComments" MappedIsNilName="IsNilComments" MappedMemberName="m_Comments" MappedDisplayName="Comments" MappedSetterName="Comments" MappedGetterName="Comments" FormatOverride="">
+      <Description>
+      </Description>
+      <Remarks>
+      </Remarks>
+    </Attribute>
+    <Attribute Name="ReleasingLabel" DefaultValue="" MappedIsValidMember="m_IsValidReleasingLabel" MappedSetValidName="SetValidReleasingLabel" MappedIsValidName="IsValidReleasingLabel" MappedIsNilMember="m_IsNilReleasingLabel" MappedSetNilName="SetNilReleasingLabel" MappedIsNilName="IsNilReleasingLabel" MappedMemberName="m_ReleasingLabel" MappedDisplayName="ReleasingLabel" MappedSetterName="ReleasingLabel" MappedGetterName="ReleasingLabel">
+      <Description>
+      </Description>
+      <Remarks>
+      </Remarks>
+    </Attribute>
+    <Attribute Name="LocalCatNo" DefaultValue="" MappedIsValidMember="m_IsValidLocalCatNo" MappedSetValidName="SetValidLocalCatNo" MappedIsValidName="IsValidLocalCatNo" MappedIsNilMember="m_IsNilLocalCatNo" MappedSetNilName="SetNilLocalCatNo" MappedIsNilName="IsNilLocalCatNo" MappedMemberName="m_LocalCatNo" MappedDisplayName="LocalCatNo" MappedSetterName="LocalCatNo" MappedGetterName="LocalCatNo" FormatOverride="">
+      <Description>
+      </Description>
+      <Remarks>
+      </Remarks>
+    </Attribute>
+    <Attribute Name="VS" DefaultValue="" MappedIsValidMember="m_IsValidVS" MappedSetValidName="SetValidVS" MappedIsValidName="IsValidVS" MappedIsNilMember="m_IsNilVS" MappedSetNilName="SetNilVS" MappedIsNilName="IsNilVS" MappedMemberName="m_VS" MappedDisplayName="VS" MappedSetterName="VS" MappedGetterName="VS" FormatOverride="">
+      <Description>
+      </Description>
+      <Remarks>
+      </Remarks>
+    </Attribute>
+    <Attribute Name="LG" DefaultValue="" MappedIsValidMember="m_IsValidLG" MappedSetValidName="SetValidLG" MappedIsValidName="IsValidLG" MappedIsNilMember="m_IsNilLG" MappedSetNilName="SetNilLG" MappedIsNilName="IsNilLG" MappedMemberName="m_LG" MappedDisplayName="LG" MappedSetterName="LG" MappedGetterName="LG" FormatOverride="">
+      <Description>
+      </Description>
+      <Remarks>
+      </Remarks>
+    </Attribute>
+    <Attribute Name="CC" DefaultValue="" MappedIsValidMember="m_IsValidCC" MappedSetValidName="SetValidCC" MappedIsValidName="IsValidCC" MappedIsNilMember="m_IsNilCC" MappedSetNilName="SetNilCC" MappedIsNilName="IsNilCC" MappedMemberName="m_CC" MappedDisplayName="CC" MappedSetterName="CC" MappedGetterName="CC" FormatOverride="">
+      <Description>
+      </Description>
+      <Remarks>
+      </Remarks>
+    </Attribute>
+    <Attribute Name="UPV" DefaultValue="" MappedIsValidMember="m_IsValidUPV" MappedSetValidName="SetValidUPV" MappedIsValidName="IsValidUPV" MappedIsNilMember="m_IsNilUPV" MappedSetNilName="SetNilUPV" MappedIsNilName="IsNilUPV" MappedMemberName="m_UPV" MappedDisplayName="UPV" MappedSetterName="UPV" MappedGetterName="UPV" FormatOverride="">
+      <Description>
+      </Description>
+      <Remarks>
+      </Remarks>
+    </Attribute>
+    <Attribute Name="LocalRowCreationDate" DefaultValue="" MappedIsValidMember="m_IsValidLocalRowCreationDate" MappedSetValidName="SetValidLocalRowCreationDate" MappedIsValidName="IsValidLocalRowCreationDate" MappedIsNilMember="m_IsNilLocalRowCreationDate" MappedSetNilName="SetNilLocalRowCreationDate" MappedIsNilName="IsNilLocalRowCreationDate" MappedMemberName="m_LocalRowCreationDate" MappedDisplayName="LocalRowCreationDate" MappedSetterName="LocalRowCreationDate" MappedGetterName="LocalRowCreationDate" FormatOverride="">
+      <Description>
+      </Description>
+      <Remarks>
+      </Remarks>
+    </Attribute>
+    <Attribute Name="LocalRowPushedToR2" DefaultValue="" MappedIsValidMember="m_IsValidLocalRowPushedToR2" MappedSetValidName="SetValidLocalRowPushedToR2" MappedIsValidName="IsValidLocalRowPushedToR2" MappedIsNilMember="m_IsNilLocalRowPushedToR2" MappedSetNilName="SetNilLocalRowPushedToR2" MappedIsNilName="IsNilLocalRowPushedToR2" MappedMemberName="m_LocalRowPushedToR2" MappedDisplayName="LocalRowPushedToR2" MappedSetterName="LocalRowPushedToR2" MappedGetterName="LocalRowPushedToR2" FormatOverride="">
+      <Description>
+      </Description>
+      <Remarks>
+      </Remarks>
+    </Attribute>
+  </Class>
+  <Class Name="LocalVersions" LongName="LocalVersions" MappedClassColName="LocalVersionsCol" MappedClassName="LocalVersions">
+    <Description>
+    </Description>
+    <Remarks>
+    </Remarks>
+    <Attribute Name="LocalVersion" DefaultValue="" MappedIsValidMember="m_IsValidLocalVersions" MappedSetValidName="SetValidLocalVersions" MappedIsValidName="IsValidLocalVersions" MappedIsNilMember="m_IsNilLocalVersions" MappedSetNilName="SetNilLocalVersions" MappedIsNilName="IsNilLocalVersions" MappedMemberName="m_LocalVersions" MappedDisplayName="LocalVersions" MappedSetterName="LocalVersionsA" MappedGetterName="LocalVersionsA">
+      <Description>
+      </Description>
+      <Remarks>
+      </Remarks>
+    </Attribute>
+  </Class>
+  <Class Name="LocalVersionType" LongName="LocalVersionType" MappedClassColName="LocalVersionTypeCol" MappedClassName="LocalVersionType">
+    <Description>
+    </Description>
+    <Remarks>This class exists to provide a base into which other interfaces can be placed, this is necessary because each class is either a sequence, choice or all. Without this class classes deriving from this, may contain elements that are part of a sequence and a choice, this would break the library.</Remarks>
+    <Attribute Name="LLVersionID" DefaultValue="" MappedIsValidMember="m_IsValidLLVersionID" MappedSetValidName="SetValidLLVersionID" MappedIsValidName="IsValidLLVersionID" MappedIsNilMember="m_IsNilLLVersionID" MappedSetNilName="SetNilLLVersionID" MappedIsNilName="IsNilLLVersionID" MappedMemberName="m_LLVersionID" MappedDisplayName="LLVersionID" MappedSetterName="LLVersionID" MappedGetterName="LLVersionID" FormatOverride="">
+      <Description>
+      </Description>
+      <Remarks>
+      </Remarks>
+    </Attribute>
+    <Attribute Name="Country" DefaultValue="" MappedIsValidMember="m_IsValidCountry" MappedSetValidName="SetValidCountry" MappedIsValidName="IsValidCountry" MappedIsNilMember="m_IsNilCountry" MappedSetNilName="SetNilCountry" MappedIsNilName="IsNilCountry" MappedMemberName="m_Country" MappedDisplayName="Country" MappedSetterName="Country" MappedGetterName="Country">
+      <Description>
+      </Description>
+      <Remarks>
+      </Remarks>
+    </Attribute>
+    <Attribute Name="ReleaseDate" DefaultValue="" MappedIsValidMember="m_IsValidReleaseDate" MappedSetValidName="SetValidReleaseDate" MappedIsValidName="IsValidReleaseDate" MappedIsNilMember="m_IsNilReleaseDate" MappedSetNilName="SetNilReleaseDate" MappedIsNilName="IsNilReleaseDate" MappedMemberName="m_ReleaseDate" MappedDisplayName="ReleaseDate" MappedSetterName="ReleaseDate" MappedGetterName="ReleaseDate" FormatOverride="">
+      <Description>
+      </Description>
+      <Remarks>
+      </Remarks>
+    </Attribute>
+    <Attribute Name="InitialOrders" DefaultValue="" MappedIsValidMember="m_IsValidInitialOrders" MappedSetValidName="SetValidInitialOrders" MappedIsValidName="IsValidInitialOrders" MappedIsNilMember="m_IsNilInitialOrders" MappedSetNilName="SetNilInitialOrders" MappedIsNilName="IsNilInitialOrders" MappedMemberName="m_InitialOrders" MappedDisplayName="InitialOrders" MappedSetterName="InitialOrders" MappedGetterName="InitialOrders" FormatOverride="">
+      <Description>
+      </Description>
+      <Remarks>
+      </Remarks>
+    </Attribute>
+    <Attribute Name="InitialOrderValidation" DefaultValue="" MappedIsValidMember="m_IsValidInitialOrderValidation" MappedSetValidName="SetValidInitialOrderValidation" MappedIsValidName="IsValidInitialOrderValidation" MappedIsNilMember="m_IsNilInitialOrderValidation" MappedSetNilName="SetNilInitialOrderValidation" MappedIsNilName="IsNilInitialOrderValidation" MappedMemberName="m_InitialOrderValidation" MappedDisplayName="InitialOrderValidation" MappedSetterName="InitialOrderValidation" MappedGetterName="InitialOrderValidation">
+      <Description>
+      </Description>
+      <Remarks>
+      </Remarks>
+    </Attribute>
+    <Attribute Name="BoMID" DefaultValue="" MappedIsValidMember="m_IsValidBoMID" MappedSetValidName="SetValidBoMID" MappedIsValidName="IsValidBoMID" MappedIsNilMember="m_IsNilBoMID" MappedSetNilName="SetNilBoMID" MappedIsNilName="IsNilBoMID" MappedMemberName="m_BoMID" MappedDisplayName="BoMID" MappedSetterName="BoMID" MappedGetterName="BoMID" FormatOverride="">
+      <Description>
+      </Description>
+      <Remarks>
+      </Remarks>
+    </Attribute>
+    <Attribute Name="Comments" DefaultValue="" MappedIsValidMember="m_IsValidComments" MappedSetValidName="SetValidComments" MappedIsValidName="IsValidComments" MappedIsNilMember="m_IsNilComments" MappedSetNilName="SetNilComments" MappedIsNilName="IsNilComments" MappedMemberName="m_Comments" MappedDisplayName="Comments" MappedSetterName="Comments" MappedGetterName="Comments" FormatOverride="">
+      <Description>
+      </Description>
+      <Remarks>
+      </Remarks>
+    </Attribute>
+    <Attribute Name="ReleasingLabel" DefaultValue="" MappedIsValidMember="m_IsValidReleasingLabel" MappedSetValidName="SetValidReleasingLabel" MappedIsValidName="IsValidReleasingLabel" MappedIsNilMember="m_IsNilReleasingLabel" MappedSetNilName="SetNilReleasingLabel" MappedIsNilName="IsNilReleasingLabel" MappedMemberName="m_ReleasingLabel" MappedDisplayName="ReleasingLabel" MappedSetterName="ReleasingLabel" MappedGetterName="ReleasingLabel">
+      <Description>
+      </Description>
+      <Remarks>
+      </Remarks>
+    </Attribute>
+    <Attribute Name="LocalCatNo" DefaultValue="" MappedIsValidMember="m_IsValidLocalCatNo" MappedSetValidName="SetValidLocalCatNo" MappedIsValidName="IsValidLocalCatNo" MappedIsNilMember="m_IsNilLocalCatNo" MappedSetNilName="SetNilLocalCatNo" MappedIsNilName="IsNilLocalCatNo" MappedMemberName="m_LocalCatNo" MappedDisplayName="LocalCatNo" MappedSetterName="LocalCatNo" MappedGetterName="LocalCatNo" FormatOverride="">
+      <Description>
+      </Description>
+      <Remarks>
+      </Remarks>
+    </Attribute>
+    <Attribute Name="VS" DefaultValue="" MappedIsValidMember="m_IsValidVS" MappedSetValidName="SetValidVS" MappedIsValidName="IsValidVS" MappedIsNilMember="m_IsNilVS" MappedSetNilName="SetNilVS" MappedIsNilName="IsNilVS" MappedMemberName="m_VS" MappedDisplayName="VS" MappedSetterName="VS" MappedGetterName="VS" FormatOverride="">
+      <Description>
+      </Description>
+      <Remarks>
+      </Remarks>
+    </Attribute>
+    <Attribute Name="LG" DefaultValue="" MappedIsValidMember="m_IsValidLG" MappedSetValidName="SetValidLG" MappedIsValidName="IsValidLG" MappedIsNilMember="m_IsNilLG" MappedSetNilName="SetNilLG" MappedIsNilName="IsNilLG" MappedMemberName="m_LG" MappedDisplayName="LG" MappedSetterName="LG" MappedGetterName="LG" FormatOverride="">
+      <Description>
+      </Description>
+      <Remarks>
+      </Remarks>
+    </Attribute>
+    <Attribute Name="CC" DefaultValue="" MappedIsValidMember="m_IsValidCC" MappedSetValidName="SetValidCC" MappedIsValidName="IsValidCC" MappedIsNilMember="m_IsNilCC" MappedSetNilName="SetNilCC" MappedIsNilName="IsNilCC" MappedMemberName="m_CC" MappedDisplayName="CC" MappedSetterName="CC" MappedGetterName="CC" FormatOverride="">
+      <Description>
+      </Description>
+      <Remarks>
+      </Remarks>
+    </Attribute>
+    <Attribute Name="UPV" DefaultValue="" MappedIsValidMember="m_IsValidUPV" MappedSetValidName="SetValidUPV" MappedIsValidName="IsValidUPV" MappedIsNilMember="m_IsNilUPV" MappedSetNilName="SetNilUPV" MappedIsNilName="IsNilUPV" MappedMemberName="m_UPV" MappedDisplayName="UPV" MappedSetterName="UPV" MappedGetterName="UPV" FormatOverride="">
+      <Description>
+      </Description>
+      <Remarks>
+      </Remarks>
+    </Attribute>
+    <Attribute Name="LocalRowCreationDate" DefaultValue="" MappedIsValidMember="m_IsValidLocalRowCreationDate" MappedSetValidName="SetValidLocalRowCreationDate" MappedIsValidName="IsValidLocalRowCreationDate" MappedIsNilMember="m_IsNilLocalRowCreationDate" MappedSetNilName="SetNilLocalRowCreationDate" MappedIsNilName="IsNilLocalRowCreationDate" MappedMemberName="m_LocalRowCreationDate" MappedDisplayName="LocalRowCreationDate" MappedSetterName="LocalRowCreationDate" MappedGetterName="LocalRowCreationDate" FormatOverride="">
+      <Description>
+      </Description>
+      <Remarks>
+      </Remarks>
+    </Attribute>
+    <Attribute Name="LocalRowPushedToR2" DefaultValue="" MappedIsValidMember="m_IsValidLocalRowPushedToR2" MappedSetValidName="SetValidLocalRowPushedToR2" MappedIsValidName="IsValidLocalRowPushedToR2" MappedIsNilMember="m_IsNilLocalRowPushedToR2" MappedSetNilName="SetNilLocalRowPushedToR2" MappedIsNilName="IsNilLocalRowPushedToR2" MappedMemberName="m_LocalRowPushedToR2" MappedDisplayName="LocalRowPushedToR2" MappedSetterName="LocalRowPushedToR2" MappedGetterName="LocalRowPushedToR2" FormatOverride="">
+      <Description>
+      </Description>
+      <Remarks>
+      </Remarks>
+    </Attribute>
+  </Class>
+  <Class Name="ManufactureLocation" LongName="ManufactureLocation" MappedClassColName="ManufactureLocationCol" MappedClassName="ManufactureLocation">
+    <Description>
+    </Description>
+    <Remarks>
+    </Remarks>
+    <Attribute Name="LocationID" DefaultValue="" MappedIsValidMember="m_IsValidLocationID" MappedSetValidName="SetValidLocationID" MappedIsValidName="IsValidLocationID" MappedIsNilMember="m_IsNilLocationID" MappedSetNilName="SetNilLocationID" MappedIsNilName="IsNilLocationID" MappedMemberName="m_LocationID" MappedDisplayName="LocationID" MappedSetterName="LocationID" MappedGetterName="LocationID" FormatOverride="">
+      <Description>
+      </Description>
+      <Remarks>
+      </Remarks>
+    </Attribute>
+    <Attribute Name="Description" DefaultValue="" MappedIsValidMember="m_IsValidDescription" MappedSetValidName="SetValidDescription" MappedIsValidName="IsValidDescription" MappedIsNilMember="m_IsNilDescription" MappedSetNilName="SetNilDescription" MappedIsNilName="IsNilDescription" MappedMemberName="m_Description" MappedDisplayName="Description" MappedSetterName="Description" MappedGetterName="Description">
+      <Description>
+      </Description>
+      <Remarks>
+      </Remarks>
+    </Attribute>
+  </Class>
+  <Class Name="Manufacturers" LongName="Manufacturers" MappedClassColName="ManufacturersCol" MappedClassName="Manufacturers">
+    <Description>
+    </Description>
+    <Remarks>
+    </Remarks>
+    <Attribute Name="Manufacturer" DefaultValue="" MappedIsValidMember="m_IsValidManufacturers" MappedSetValidName="SetValidManufacturers" MappedIsValidName="IsValidManufacturers" MappedIsNilMember="m_IsNilManufacturers" MappedSetNilName="SetNilManufacturers" MappedIsNilName="IsNilManufacturers" MappedMemberName="m_Manufacturers" MappedDisplayName="Manufacturers" MappedSetterName="ManufacturersA" MappedGetterName="ManufacturersA">
+      <Description>
+      </Description>
+      <Remarks>
+      </Remarks>
+    </Attribute>
+  </Class>
+  <Class Name="ManufacturerType" LongName="ManufacturerType" MappedClassColName="ManufacturerTypeCol" MappedClassName="ManufacturerType">
+    <Description>
+    </Description>
+    <Remarks>
+    </Remarks>
+    <Attribute Name="Name" DefaultValue="" MappedIsValidMember="m_IsValidName" MappedSetValidName="SetValidName" MappedIsValidName="IsValidName" MappedIsNilMember="m_IsNilName" MappedSetNilName="SetNilName" MappedIsNilName="IsNilName" MappedMemberName="m_Name" MappedDisplayName="Name" MappedSetterName="Name" MappedGetterName="Name" FormatOverride="">
+      <Description>
+      </Description>
+      <Remarks>
+      </Remarks>
+    </Attribute>
+    <Attribute Name="ManufacturerID" DefaultValue="" MappedIsValidMember="m_IsValidManufacturerID" MappedSetValidName="SetValidManufacturerID" MappedIsValidName="IsValidManufacturerID" MappedIsNilMember="m_IsNilManufacturerID" MappedSetNilName="SetNilManufacturerID" MappedIsNilName="IsNilManufacturerID" MappedMemberName="m_ManufacturerID" MappedDisplayName="ManufacturerID" MappedSetterName="ManufacturerID" MappedGetterName="ManufacturerID" FormatOverride="">
+      <Description>
+      </Description>
+      <Remarks>
+      </Remarks>
+    </Attribute>
+  </Class>
+  <Class Name="Person" LongName="Person" MappedClassColName="PersonCol" MappedClassName="Person">
+    <Description>
+    </Description>
+    <Remarks>
+    </Remarks>
+    <Attribute Name="Role" DefaultValue="" MappedIsValidMember="m_IsValidRole" MappedSetValidName="SetValidRole" MappedIsValidName="IsValidRole" MappedIsNilMember="m_IsNilRole" MappedSetNilName="SetNilRole" MappedIsNilName="IsNilRole" MappedMemberName="m_Role" MappedDisplayName="Role" MappedSetterName="Role" MappedGetterName="Role" FormatOverride="">
+      <Description>
+      </Description>
+      <Remarks>
+      </Remarks>
+    </Attribute>
+    <Attribute Name="FirstName" DefaultValue="" MappedIsValidMember="m_IsValidFirstName" MappedSetValidName="SetValidFirstName" MappedIsValidName="IsValidFirstName" MappedIsNilMember="m_IsNilFirstName" MappedSetNilName="SetNilFirstName" MappedIsNilName="IsNilFirstName" MappedMemberName="m_FirstName" MappedDisplayName="FirstName" MappedSetterName="FirstName" MappedGetterName="FirstName" FormatOverride="">
+      <Description>
+      </Description>
+      <Remarks>
+      </Remarks>
+    </Attribute>
+    <Attribute Name="Lastname" DefaultValue="" MappedIsValidMember="m_IsValidLastname" MappedSetValidName="SetValidLastname" MappedIsValidName="IsValidLastname" MappedIsNilMember="m_IsNilLastname" MappedSetNilName="SetNilLastname" MappedIsNilName="IsNilLastname" MappedMemberName="m_Lastname" MappedDisplayName="Lastname" MappedSetterName="Lastname" MappedGetterName="Lastname" FormatOverride="">
+      <Description>
+      </Description>
+      <Remarks>
+      </Remarks>
+    </Attribute>
+  </Class>
+  <Class Name="PhysicalProductDetails" LongName="PhysicalProductDetails" MappedClassColName="PhysicalProductDetailsCol" MappedClassName="PhysicalProductDetails">
+    <Description>
+    </Description>
+    <Remarks>This class exists to provide a base into which other interfaces can be placed, this is necessary because each class is either a sequence, choice or all. Without this class classes deriving from this, may contain elements that are part of a sequence and a choice, this would break the library.</Remarks>
+    <Enum Name="SetType" MappedEnumColName="PhysicalProductDetails_SetTypeCol" MappedEnumName="PhysicalProductDetails_SetType">
+      <Value Value="None" MappedValue="None" />
+      <Value Value="Set" MappedValue="Set" />
+      <Value Value="SuperSet" MappedValue="SuperSet" />
+    </Enum>
+    <Attribute Name="ReleaseDate" DefaultValue="" MappedIsValidMember="m_IsValidReleaseDate" MappedSetValidName="SetValidReleaseDate" MappedIsValidName="IsValidReleaseDate" MappedIsNilMember="m_IsNilReleaseDate" MappedSetNilName="SetNilReleaseDate" MappedIsNilName="IsNilReleaseDate" MappedMemberName="m_ReleaseDate" MappedDisplayName="ReleaseDate" MappedSetterName="ReleaseDate" MappedGetterName="ReleaseDate" FormatOverride="">
+      <Description>
+      </Description>
+      <Remarks>
+      </Remarks>
+    </Attribute>
+    <Attribute Name="CPRSVersionTitle" DefaultValue="" MappedIsValidMember="m_IsValidCPRSVersionTitle" MappedSetValidName="SetValidCPRSVersionTitle" MappedIsValidName="IsValidCPRSVersionTitle" MappedIsNilMember="m_IsNilCPRSVersionTitle" MappedSetNilName="SetNilCPRSVersionTitle" MappedIsNilName="IsNilCPRSVersionTitle" MappedMemberName="m_CPRSVersionTitle" MappedDisplayName="CPRSVersionTitle" MappedSetterName="CPRSVersionTitle" MappedGetterName="CPRSVersionTitle" FormatOverride="">
+      <Description>
+      </Description>
+      <Remarks>
+      </Remarks>
+    </Attribute>
+    <Attribute Name="CPRSProductType" DefaultValue="" MappedIsValidMember="m_IsValidCPRSProductType" MappedSetValidName="SetValidCPRSProductType" MappedIsValidName="IsValidCPRSProductType" MappedIsNilMember="m_IsNilCPRSProductType" MappedSetNilName="SetNilCPRSProductType" MappedIsNilName="IsNilCPRSProductType" MappedMemberName="m_CPRSProductType" MappedDisplayName="CPRSProductType" MappedSetterName="CPRSProductType" MappedGetterName="CPRSProductType">
+      <Description>
+      </Description>
+      <Remarks>
+      </Remarks>
+    </Attribute>
+    <Attribute Name="CPRSStatus" DefaultValue="" MappedIsValidMember="m_IsValidCPRSStatus" MappedSetValidName="SetValidCPRSStatus" MappedIsValidName="IsValidCPRSStatus" MappedIsNilMember="m_IsNilCPRSStatus" MappedSetNilName="SetNilCPRSStatus" MappedIsNilName="IsNilCPRSStatus" MappedMemberName="m_CPRSStatus" MappedDisplayName="CPRSStatus" MappedSetterName="CPRSStatus" MappedGetterName="CPRSStatus">
+      <Description>
+      </Description>
+      <Remarks>
+      </Remarks>
+    </Attribute>
+    <Attribute Name="CPRSFormatCode" DefaultValue="" MappedIsValidMember="m_IsValidCPRSFormatCode" MappedSetValidName="SetValidCPRSFormatCode" MappedIsValidName="IsValidCPRSFormatCode" MappedIsNilMember="m_IsNilCPRSFormatCode" MappedSetNilName="SetNilCPRSFormatCode" MappedIsNilName="IsNilCPRSFormatCode" MappedMemberName="m_CPRSFormatCode" MappedDisplayName="CPRSFormatCode" MappedSetterName="CPRSFormatCode" MappedGetterName="CPRSFormatCode">
+      <Description>
+      </Description>
+      <Remarks>
+      </Remarks>
+    </Attribute>
+    <Attribute Name="CPRSConfigID" DefaultValue="" MappedIsValidMember="m_IsValidCPRSConfigID" MappedSetValidName="SetValidCPRSConfigID" MappedIsValidName="IsValidCPRSConfigID" MappedIsNilMember="m_IsNilCPRSConfigID" MappedSetNilName="SetNilCPRSConfigID" MappedIsNilName="IsNilCPRSConfigID" MappedMemberName="m_CPRSConfigID" MappedDisplayName="CPRSConfigID" MappedSetterName="CPRSConfigID" MappedGetterName="CPRSConfigID" FormatOverride="">
+      <Description>
+      </Description>
+      <Remarks>
+      </Remarks>
+    </Attribute>
+    <Attribute Name="Manufacturers" DefaultValue="" MappedIsValidMember="m_IsValidManufacturers" MappedSetValidName="SetValidManufacturers" MappedIsValidName="IsValidManufacturers" MappedIsNilMember="m_IsNilManufacturers" MappedSetNilName="SetNilManufacturers" MappedIsNilName="IsNilManufacturers" MappedMemberName="m_Manufacturers" MappedDisplayName="Manufacturers" MappedSetterName="Manufacturers" MappedGetterName="Manufacturers">
+      <Description>
+      </Description>
+      <Remarks>
+      </Remarks>
+    </Attribute>
+    <Attribute Name="ManufactureLocation" DefaultValue="" MappedIsValidMember="m_IsValidManufactureLocation" MappedSetValidName="SetValidManufactureLocation" MappedIsValidName="IsValidManufactureLocation" MappedIsNilMember="m_IsNilManufactureLocation" MappedSetNilName="SetNilManufactureLocation" MappedIsNilName="IsNilManufactureLocation" MappedMemberName="m_ManufactureLocation" MappedDisplayName="ManufactureLocation" MappedSetterName="ManufactureLocation" MappedGetterName="ManufactureLocation">
+      <Description>
+      </Description>
+      <Remarks>
+      </Remarks>
+    </Attribute>
+    <Attribute Name="CPRSPriceCode" DefaultValue="" MappedIsValidMember="m_IsValidCPRSPriceCode" MappedSetValidName="SetValidCPRSPriceCode" MappedIsValidName="IsValidCPRSPriceCode" MappedIsNilMember="m_IsNilCPRSPriceCode" MappedSetNilName="SetNilCPRSPriceCode" MappedIsNilName="IsNilCPRSPriceCode" MappedMemberName="m_CPRSPriceCode" MappedDisplayName="CPRSPriceCode" MappedSetterName="CPRSPriceCode" MappedGetterName="CPRSPriceCode" FormatOverride="">
+      <Description>
+      </Description>
+      <Remarks>
+      </Remarks>
+    </Attribute>
+    <Attribute Name="Comments" DefaultValue="" MappedIsValidMember="m_IsValidComments" MappedSetValidName="SetValidComments" MappedIsValidName="IsValidComments" MappedIsNilMember="m_IsNilComments" MappedSetNilName="SetNilComments" MappedIsNilName="IsNilComments" MappedMemberName="m_Comments" MappedDisplayName="Comments" MappedSetterName="Comments" MappedGetterName="Comments" FormatOverride="">
+      <Description>
+      </Description>
+      <Remarks>
+      </Remarks>
+    </Attribute>
+    <Attribute Name="DiskCount" DefaultValue="0" MappedIsValidMember="m_IsValidDiskCount" MappedSetValidName="SetValidDiskCount" MappedIsValidName="IsValidDiskCount" MappedIsNilMember="m_IsNilDiskCount" MappedSetNilName="SetNilDiskCount" MappedIsNilName="IsNilDiskCount" MappedMemberName="m_DiskCount" MappedDisplayName="DiskCount" MappedSetterName="DiskCount" MappedGetterName="DiskCount" FormatOverride="">
+      <Description>
+      </Description>
+      <Remarks>
+      </Remarks>
+    </Attribute>
+    <Attribute Name="SetType" DefaultValue="" MappedIsValidMember="m_IsValidSetType" MappedSetValidName="SetValidSetType" MappedIsValidName="IsValidSetType" MappedIsNilMember="m_IsNilSetType" MappedSetNilName="SetNilSetType" MappedIsNilName="IsNilSetType" MappedMemberName="m_SetType" MappedDisplayName="SetType" MappedSetterName="SetType" MappedGetterName="SetType">
+      <Description>
+      </Description>
+      <Remarks>
+      </Remarks>
+    </Attribute>
+    <Attribute Name="IsCopyProtected" DefaultValue="" MappedIsValidMember="m_IsValidIsCopyProtected" MappedSetValidName="SetValidIsCopyProtected" MappedIsValidName="IsValidIsCopyProtected" MappedIsNilMember="m_IsNilIsCopyProtected" MappedSetNilName="SetNilIsCopyProtected" MappedIsNilName="IsNilIsCopyProtected" MappedMemberName="m_IsCopyProtected" MappedDisplayName="IsCopyProtected" MappedSetterName="IsCopyProtected" MappedGetterName="IsCopyProtected" FormatOverride="">
+      <Description>
+      </Description>
+      <Remarks>
+      </Remarks>
+    </Attribute>
+    <Attribute Name="InitialOrders" DefaultValue="" MappedIsValidMember="m_IsValidInitialOrders" MappedSetValidName="SetValidInitialOrders" MappedIsValidName="IsValidInitialOrders" MappedIsNilMember="m_IsNilInitialOrders" MappedSetNilName="SetNilInitialOrders" MappedIsNilName="IsNilInitialOrders" MappedMemberName="m_InitialOrders" MappedDisplayName="InitialOrders" MappedSetterName="InitialOrders" MappedGetterName="InitialOrders" FormatOverride="">
+      <Description>
+      </Description>
+      <Remarks>
+      </Remarks>
+    </Attribute>
+    <Attribute Name="InitialOrderValidation" DefaultValue="" MappedIsValidMember="m_IsValidInitialOrderValidation" MappedSetValidName="SetValidInitialOrderValidation" MappedIsValidName="IsValidInitialOrderValidation" MappedIsNilMember="m_IsNilInitialOrderValidation" MappedSetNilName="SetNilInitialOrderValidation" MappedIsNilName="IsNilInitialOrderValidation" MappedMemberName="m_InitialOrderValidation" MappedDisplayName="InitialOrderValidation" MappedSetterName="InitialOrderValidation" MappedGetterName="InitialOrderValidation">
+      <Description>
+      </Description>
+      <Remarks>
+      </Remarks>
+    </Attribute>
+    <Attribute Name="DeccaDGGInitialOrders" DefaultValue="" MappedIsValidMember="m_IsValidDeccaDGGInitialOrders" MappedSetValidName="SetValidDeccaDGGInitialOrders" MappedIsValidName="IsValidDeccaDGGInitialOrders" MappedIsNilMember="m_IsNilDeccaDGGInitialOrders" MappedSetNilName="SetNilDeccaDGGInitialOrders" MappedIsNilName="IsNilDeccaDGGInitialOrders" MappedMemberName="m_DeccaDGGInitialOrders" MappedDisplayName="DeccaDGGInitialOrders" MappedSetterName="DeccaDGGInitialOrders" MappedGetterName="DeccaDGGInitialOrders" FormatOverride="">
+      <Description>
+      </Description>
+      <Remarks>
+      </Remarks>
+    </Attribute>
+    <Attribute Name="NPSCCode" DefaultValue="" MappedIsValidMember="m_IsValidNPSCCode" MappedSetValidName="SetValidNPSCCode" MappedIsValidName="IsValidNPSCCode" MappedIsNilMember="m_IsNilNPSCCode" MappedSetNilName="SetNilNPSCCode" MappedIsNilName="IsNilNPSCCode" MappedMemberName="m_NPSCCode" MappedDisplayName="NPSCCode" MappedSetterName="NPSCCode" MappedGetterName="NPSCCode">
+      <Description>
+      </Description>
+      <Remarks>
+      </Remarks>
+    </Attribute>
+    <Attribute Name="ReorderInfo" DefaultValue="" MappedIsValidMember="m_IsValidReorderInfo" MappedSetValidName="SetValidReorderInfo" MappedIsValidName="IsValidReorderInfo" MappedIsNilMember="m_IsNilReorderInfo" MappedSetNilName="SetNilReorderInfo" MappedIsNilName="IsNilReorderInfo" MappedMemberName="m_ReorderInfo" MappedDisplayName="ReorderInfo" MappedSetterName="ReorderInfo" MappedGetterName="ReorderInfo">
+      <Description>
+      </Description>
+      <Remarks>
+      </Remarks>
+    </Attribute>
+    <Attribute Name="PhysStockDate" DefaultValue="" MappedIsValidMember="m_IsValidPhysStockDate" MappedSetValidName="SetValidPhysStockDate" MappedIsValidName="IsValidPhysStockDate" MappedIsNilMember="m_IsNilPhysStockDate" MappedSetNilName="SetNilPhysStockDate" MappedIsNilName="IsNilPhysStockDate" MappedMemberName="m_PhysStockDate" MappedDisplayName="PhysStockDate" MappedSetterName="PhysStockDate" MappedGetterName="PhysStockDate" FormatOverride="">
+      <Description>
+      </Description>
+      <Remarks>
+      </Remarks>
+    </Attribute>
+    <Attribute Name="IMS" DefaultValue="" MappedIsValidMember="m_IsValidIMS" MappedSetValidName="SetValidIMS" MappedIsValidName="IsValidIMS" MappedIsNilMember="m_IsNilIMS" MappedSetNilName="SetNilIMS" MappedIsNilName="IsNilIMS" MappedMemberName="m_IMS" MappedDisplayName="IMS" MappedSetterName="IMS" MappedGetterName="IMS">
+      <Description>
+      </Description>
+      <Remarks>
+      </Remarks>
+    </Attribute>
+    <Attribute Name="DistributionOnly" DefaultValue="" MappedIsValidMember="m_IsValidDistributionOnly" MappedSetValidName="SetValidDistributionOnly" MappedIsValidName="IsValidDistributionOnly" MappedIsNilMember="m_IsNilDistributionOnly" MappedSetNilName="SetNilDistributionOnly" MappedIsNilName="IsNilDistributionOnly" MappedMemberName="m_DistributionOnly" MappedDisplayName="DistributionOnly" MappedSetterName="DistributionOnly" MappedGetterName="DistributionOnly">
+      <Description>
+      </Description>
+      <Remarks>
+      </Remarks>
+    </Attribute>
+    <Attribute Name="IsAutoSampling" DefaultValue="" MappedIsValidMember="m_IsValidIsAutoSampling" MappedSetValidName="SetValidIsAutoSampling" MappedIsValidName="IsValidIsAutoSampling" MappedIsNilMember="m_IsNilIsAutoSampling" MappedSetNilName="SetNilIsAutoSampling" MappedIsNilName="IsNilIsAutoSampling" MappedMemberName="m_IsAutoSampling" MappedDisplayName="IsAutoSampling" MappedSetterName="IsAutoSampling" MappedGetterName="IsAutoSampling" FormatOverride="">
+      <Description>
+      </Description>
+      <Remarks>
+      </Remarks>
+    </Attribute>
+    <Attribute Name="LimitedEdition" DefaultValue="" MappedIsValidMember="m_IsValidLimitedEdition" MappedSetValidName="SetValidLimitedEdition" MappedIsValidName="IsValidLimitedEdition" MappedIsNilMember="m_IsNilLimitedEdition" MappedSetNilName="SetNilLimitedEdition" MappedIsNilName="IsNilLimitedEdition" MappedMemberName="m_LimitedEdition" MappedDisplayName="LimitedEdition" MappedSetterName="LimitedEdition" MappedGetterName="LimitedEdition" FormatOverride="">
+      <Description>
+      </Description>
+      <Remarks>
+      </Remarks>
+    </Attribute>
+    <Attribute Name="SpecialProject" DefaultValue="" MappedIsValidMember="m_IsValidSpecialProject" MappedSetValidName="SetValidSpecialProject" MappedIsValidName="IsValidSpecialProject" MappedIsNilMember="m_IsNilSpecialProject" MappedSetNilName="SetNilSpecialProject" MappedIsNilName="IsNilSpecialProject" MappedMemberName="m_SpecialProject" MappedDisplayName="SpecialProject" MappedSetterName="SpecialProject" MappedGetterName="SpecialProject" FormatOverride="">
+      <Description>
+      </Description>
+      <Remarks>
+      </Remarks>
+    </Attribute>
+    <Attribute Name="Components" DefaultValue="" MappedIsValidMember="m_IsValidComponents" MappedSetValidName="SetValidComponents" MappedIsValidName="IsValidComponents" MappedIsNilMember="m_IsNilComponents" MappedSetNilName="SetNilComponents" MappedIsNilName="IsNilComponents" MappedMemberName="m_Components" MappedDisplayName="Components" MappedSetterName="Components" MappedGetterName="Components">
+      <Description>
+      </Description>
+      <Remarks>
+      </Remarks>
+    </Attribute>
+    <Attribute Name="InitialOrderApproval" DefaultValue="" MappedIsValidMember="m_IsValidInitialOrderApproval" MappedSetValidName="SetValidInitialOrderApproval" MappedIsValidName="IsValidInitialOrderApproval" MappedIsNilMember="m_IsNilInitialOrderApproval" MappedSetNilName="SetNilInitialOrderApproval" MappedIsNilName="IsNilInitialOrderApproval" MappedMemberName="m_InitialOrderApproval" MappedDisplayName="InitialOrderApproval" MappedSetterName="InitialOrderApproval" MappedGetterName="InitialOrderApproval">
+      <Description>
+      </Description>
+      <Remarks>
+      </Remarks>
+    </Attribute>
+    <Attribute Name="DeccaDGGInitialOrderApproval" DefaultValue="" MappedIsValidMember="m_IsValidDeccaDGGInitialOrderApproval" MappedSetValidName="SetValidDeccaDGGInitialOrderApproval" MappedIsValidName="IsValidDeccaDGGInitialOrderApproval" MappedIsNilMember="m_IsNilDeccaDGGInitialOrderApproval" MappedSetNilName="SetNilDeccaDGGInitialOrderApproval" MappedIsNilName="IsNilDeccaDGGInitialOrderApproval" MappedMemberName="m_DeccaDGGInitialOrderApproval" MappedDisplayName="DeccaDGGInitialOrderApproval" MappedSetterName="DeccaDGGInitialOrderApproval" MappedGetterName="DeccaDGGInitialOrderApproval">
+      <Description>
+      </Description>
+      <Remarks>
+      </Remarks>
+    </Attribute>
+  </Class>
+  <Class Name="PhysicalReleaseSchedule" LongName="PhysicalReleaseSchedule" MappedClassColName="PhysicalReleaseScheduleCol" MappedClassName="PhysicalReleaseSchedule">
+    <Description>
+    </Description>
+    <Remarks>This class exists to provide a base into which other interfaces can be placed, this is necessary because each class is either a sequence, choice or all. Without this class classes deriving from this, may contain elements that are part of a sequence and a choice, this would break the library.</Remarks>
+    <Enum Name="CPRSMusicType" MappedEnumColName="PhysicalReleaseSchedule_CPRSMusicTypeCol" MappedEnumName="PhysicalReleaseSchedule_CPRSMusicType">
+      <Value Value="Pop" MappedValue="Pop" />
+      <Value Value="ClassicsAndJazz" MappedValue="ClassicsAndJazz" />
+    </Enum>
+    <Enum Name="CPRSManufacturingType" MappedEnumColName="PhysicalReleaseSchedule_CPRSManufacturingTypeCol" MappedEnumName="PhysicalReleaseSchedule_CPRSManufacturingType">
+      <Value Value="Pop" MappedValue="Pop" />
+      <Value Value="ClassicsAndJazz" MappedValue="ClassicsAndJazz" />
+    </Enum>
+    <Attribute Name="CPRSProductID" DefaultValue="" MappedIsValidMember="m_IsValidCPRSProductID" MappedSetValidName="SetValidCPRSProductID" MappedIsValidName="IsValidCPRSProductID" MappedIsNilMember="m_IsNilCPRSProductID" MappedSetNilName="SetNilCPRSProductID" MappedIsNilName="IsNilCPRSProductID" MappedMemberName="m_CPRSProductID" MappedDisplayName="CPRSProductID" MappedSetterName="CPRSProductID" MappedGetterName="CPRSProductID" FormatOverride="">
+      <Description>
+      </Description>
+      <Remarks>
+      </Remarks>
+    </Attribute>
+    <Attribute Name="ProductUPC" DefaultValue="" MappedIsValidMember="m_IsValidProductUPC" MappedSetValidName="SetValidProductUPC" MappedIsValidName="IsValidProductUPC" MappedIsNilMember="m_IsNilProductUPC" MappedSetNilName="SetNilProductUPC" MappedIsNilName="IsNilProductUPC" MappedMemberName="m_ProductUPC" MappedDisplayName="ProductUPC" MappedSetterName="ProductUPC" MappedGetterName="ProductUPC" FormatOverride="">
+      <Description>
+      </Description>
+      <Remarks>
+      </Remarks>
+    </Attribute>
+    <Attribute Name="UPV" DefaultValue="" MappedIsValidMember="m_IsValidUPV" MappedSetValidName="SetValidUPV" MappedIsValidName="IsValidUPV" MappedIsNilMember="m_IsNilUPV" MappedSetNilName="SetNilUPV" MappedIsNilName="IsNilUPV" MappedMemberName="m_UPV" MappedDisplayName="UPV" MappedSetterName="UPV" MappedGetterName="UPV" FormatOverride="">
+      <Description>
+      </Description>
+      <Remarks>
+      </Remarks>
+    </Attribute>
+    <Attribute Name="R2ProductID" DefaultValue="" MappedIsValidMember="m_IsValidR2ProductID" MappedSetValidName="SetValidR2ProductID" MappedIsValidName="IsValidR2ProductID" MappedIsNilMember="m_IsNilR2ProductID" MappedSetNilName="SetNilR2ProductID" MappedIsNilName="IsNilR2ProductID" MappedMemberName="m_R2ProductID" MappedDisplayName="R2ProductID" MappedSetterName="R2ProductID" MappedGetterName="R2ProductID" FormatOverride="">
+      <Description>
+      </Description>
+      <Remarks>
+      </Remarks>
+    </Attribute>
+    <Attribute Name="R2ProjectID" DefaultValue="" MappedIsValidMember="m_IsValidR2ProjectID" MappedSetValidName="SetValidR2ProjectID" MappedIsValidName="IsValidR2ProjectID" MappedIsNilMember="m_IsNilR2ProjectID" MappedSetNilName="SetNilR2ProjectID" MappedIsNilName="IsNilR2ProjectID" MappedMemberName="m_R2ProjectID" MappedDisplayName="R2ProjectID" MappedSetterName="R2ProjectID" MappedGetterName="R2ProjectID" FormatOverride="">
+      <Description>
+      </Description>
+      <Remarks>
+      </Remarks>
+    </Attribute>
+    <Attribute Name="R2ConfigID" DefaultValue="" MappedIsValidMember="m_IsValidR2ConfigID" MappedSetValidName="SetValidR2ConfigID" MappedIsValidName="IsValidR2ConfigID" MappedIsNilMember="m_IsNilR2ConfigID" MappedSetNilName="SetNilR2ConfigID" MappedIsNilName="IsNilR2ConfigID" MappedMemberName="m_R2ConfigID" MappedDisplayName="R2ConfigID" MappedSetterName="R2ConfigID" MappedGetterName="R2ConfigID" FormatOverride="">
+      <Description>
+      </Description>
+      <Remarks>
+      </Remarks>
+    </Attribute>
+    <Attribute Name="CPRSArtist" DefaultValue="" MappedIsValidMember="m_IsValidCPRSArtist" MappedSetValidName="SetValidCPRSArtist" MappedIsValidName="IsValidCPRSArtist" MappedIsNilMember="m_IsNilCPRSArtist" MappedSetNilName="SetNilCPRSArtist" MappedIsNilName="IsNilCPRSArtist" MappedMemberName="m_CPRSArtist" MappedDisplayName="CPRSArtist" MappedSetterName="CPRSArtist" MappedGetterName="CPRSArtist" FormatOverride="">
+      <Description>
+      </Description>
+      <Remarks>
+      </Remarks>
+    </Attribute>
+    <Attribute Name="CPRSTitle" DefaultValue="" MappedIsValidMember="m_IsValidCPRSTitle" MappedSetValidName="SetValidCPRSTitle" MappedIsValidName="IsValidCPRSTitle" MappedIsNilMember="m_IsNilCPRSTitle" MappedSetNilName="SetNilCPRSTitle" MappedIsNilName="IsNilCPRSTitle" MappedMemberName="m_CPRSTitle" MappedDisplayName="CPRSTitle" MappedSetterName="CPRSTitle" MappedGetterName="CPRSTitle" FormatOverride="">
+      <Description>
+      </Description>
+      <Remarks>
+      </Remarks>
+    </Attribute>
+    <Attribute Name="CPRSVersionTitle" DefaultValue="" MappedIsValidMember="m_IsValidCPRSVersionTitle" MappedSetValidName="SetValidCPRSVersionTitle" MappedIsValidName="IsValidCPRSVersionTitle" MappedIsNilMember="m_IsNilCPRSVersionTitle" MappedSetNilName="SetNilCPRSVersionTitle" MappedIsNilName="IsNilCPRSVersionTitle" MappedMemberName="m_CPRSVersionTitle" MappedDisplayName="CPRSVersionTitle" MappedSetterName="CPRSVersionTitle" MappedGetterName="CPRSVersionTitle" FormatOverride="">
+      <Description>
+      </Description>
+      <Remarks>
+      </Remarks>
+    </Attribute>
+    <Attribute Name="LastUpdated" DefaultValue="" MappedIsValidMember="m_IsValidLastUpdated" MappedSetValidName="SetValidLastUpdated" MappedIsValidName="IsValidLastUpdated" MappedIsNilMember="m_IsNilLastUpdated" MappedSetNilName="SetNilLastUpdated" MappedIsNilName="IsNilLastUpdated" MappedMemberName="m_LastUpdated" MappedDisplayName="LastUpdated" MappedSetterName="LastUpdated" MappedGetterName="LastUpdated" FormatOverride="">
+      <Description>
+      </Description>
+      <Remarks>
+      </Remarks>
+    </Attribute>
+    <Attribute Name="HasExplicitLyrics" DefaultValue="" MappedIsValidMember="m_IsValidHasExplicitLyrics" MappedSetValidName="SetValidHasExplicitLyrics" MappedIsValidName="IsValidHasExplicitLyrics" MappedIsNilMember="m_IsNilHasExplicitLyrics" MappedSetNilName="SetNilHasExplicitLyrics" MappedIsNilName="IsNilHasExplicitLyrics" MappedMemberName="m_HasExplicitLyrics" MappedDisplayName="HasExplicitLyrics" MappedSetterName="HasExplicitLyrics" MappedGetterName="HasExplicitLyrics" FormatOverride="">
+      <Description>
+      </Description>
+      <Remarks>
+      </Remarks>
+    </Attribute>
+    <Attribute Name="CPRSMusicType" DefaultValue="" MappedIsValidMember="m_IsValidCPRSMusicType" MappedSetValidName="SetValidCPRSMusicType" MappedIsValidName="IsValidCPRSMusicType" MappedIsNilMember="m_IsNilCPRSMusicType" MappedSetNilName="SetNilCPRSMusicType" MappedIsNilName="IsNilCPRSMusicType" MappedMemberName="m_CPRSMusicType" MappedDisplayName="CPRSMusicType" MappedSetterName="CPRSMusicType" MappedGetterName="CPRSMusicType">
+      <Description>
+      </Description>
+      <Remarks>
+      </Remarks>
+    </Attribute>
+    <Attribute Name="CPRSManufacturingType" DefaultValue="" MappedIsValidMember="m_IsValidCPRSManufacturingType" MappedSetValidName="SetValidCPRSManufacturingType" MappedIsValidName="IsValidCPRSManufacturingType" MappedIsNilMember="m_IsNilCPRSManufacturingType" MappedSetNilName="SetNilCPRSManufacturingType" MappedIsNilName="IsNilCPRSManufacturingType" MappedMemberName="m_CPRSManufacturingType" MappedDisplayName="CPRSManufacturingType" MappedSetterName="CPRSManufacturingType" MappedGetterName="CPRSManufacturingType">
+      <Description>
+      </Description>
+      <Remarks>
+      </Remarks>
+    </Attribute>
+    <Attribute Name="IsPriorityRelease" DefaultValue="" MappedIsValidMember="m_IsValidIsPriorityRelease" MappedSetValidName="SetValidIsPriorityRelease" MappedIsValidName="IsValidIsPriorityRelease" MappedIsNilMember="m_IsNilIsPriorityRelease" MappedSetNilName="SetNilIsPriorityRelease" MappedIsNilName="IsNilIsPriorityRelease" MappedMemberName="m_IsPriorityRelease" MappedDisplayName="IsPriorityRelease" MappedSetterName="IsPriorityRelease" MappedGetterName="IsPriorityRelease" FormatOverride="">
+      <Description>
+      </Description>
+      <Remarks>
+      </Remarks>
+    </Attribute>
+    <Attribute Name="Embargo" DefaultValue="" MappedIsValidMember="m_IsValidEmbargo" MappedSetValidName="SetValidEmbargo" MappedIsValidName="IsValidEmbargo" MappedIsNilMember="m_IsNilEmbargo" MappedSetNilName="SetNilEmbargo" MappedIsNilName="IsNilEmbargo" MappedMemberName="m_Embargo" MappedDisplayName="Embargo" MappedSetterName="Embargo" MappedGetterName="Embargo" FormatOverride="">
+      <Description>
+      </Description>
+      <Remarks>
+      </Remarks>
+    </Attribute>
+    <Attribute Name="IsMerchandise" DefaultValue="" MappedIsValidMember="m_IsValidIsMerchandise" MappedSetValidName="SetValidIsMerchandise" MappedIsValidName="IsValidIsMerchandise" MappedIsNilMember="m_IsNilIsMerchandise" MappedSetNilName="SetNilIsMerchandise" MappedIsNilName="IsNilIsMerchandise" MappedMemberName="m_IsMerchandise" MappedDisplayName="IsMerchandise" MappedSetterName="IsMerchandise" MappedGetterName="IsMerchandise" FormatOverride="">
+      <Description>
+      </Description>
+      <Remarks>
+      </Remarks>
+    </Attribute>
+    <Attribute Name="CPRSMarketingDivision" DefaultValue="" MappedIsValidMember="m_IsValidCPRSMarketingDivision" MappedSetValidName="SetValidCPRSMarketingDivision" MappedIsValidName="IsValidCPRSMarketingDivision" MappedIsNilMember="m_IsNilCPRSMarketingDivision" MappedSetNilName="SetNilCPRSMarketingDivision" MappedIsNilName="IsNilCPRSMarketingDivision" MappedMemberName="m_CPRSMarketingDivision" MappedDisplayName="CPRSMarketingDivision" MappedSetterName="CPRSMarketingDivision" MappedGetterName="CPRSMarketingDivision" FormatOverride="">
+      <Description>
+      </Description>
+      <Remarks>
+      </Remarks>
+    </Attribute>
+    <Attribute Name="CPRSRepertoireOwnerLabel" DefaultValue="" MappedIsValidMember="m_IsValidCPRSRepertoireOwnerLabel" MappedSetValidName="SetValidCPRSRepertoireOwnerLabel" MappedIsValidName="IsValidCPRSRepertoireOwnerLabel" MappedIsNilMember="m_IsNilCPRSRepertoireOwnerLabel" MappedSetNilName="SetNilCPRSRepertoireOwnerLabel" MappedIsNilName="IsNilCPRSRepertoireOwnerLabel" MappedMemberName="m_CPRSRepertoireOwnerLabel" MappedDisplayName="CPRSRepertoireOwnerLabel" MappedSetterName="CPRSRepertoireOwnerLabel" MappedGetterName="CPRSRepertoireOwnerLabel">
+      <Description>
+      </Description>
+      <Remarks>
+      </Remarks>
+    </Attribute>
+    <Attribute Name="CPRSReleasingLabel" DefaultValue="" MappedIsValidMember="m_IsValidCPRSReleasingLabel" MappedSetValidName="SetValidCPRSReleasingLabel" MappedIsValidName="IsValidCPRSReleasingLabel" MappedIsNilMember="m_IsNilCPRSReleasingLabel" MappedSetNilName="SetNilCPRSReleasingLabel" MappedIsNilName="IsNilCPRSReleasingLabel" MappedMemberName="m_CPRSReleasingLabel" MappedDisplayName="CPRSReleasingLabel" MappedSetterName="CPRSReleasingLabel" MappedGetterName="CPRSReleasingLabel">
+      <Description>
+      </Description>
+      <Remarks>
+      </Remarks>
+    </Attribute>
+    <Attribute Name="CPRSReleasingTerritory" DefaultValue="" MappedIsValidMember="m_IsValidCPRSReleasingTerritory" MappedSetValidName="SetValidCPRSReleasingTerritory" MappedIsValidName="IsValidCPRSReleasingTerritory" MappedIsNilMember="m_IsNilCPRSReleasingTerritory" MappedSetNilName="SetNilCPRSReleasingTerritory" MappedIsNilName="IsNilCPRSReleasingTerritory" MappedMemberName="m_CPRSReleasingTerritory" MappedDisplayName="CPRSReleasingTerritory" MappedSetterName="CPRSReleasingTerritory" MappedGetterName="CPRSReleasingTerritory">
+      <Description>
+      </Description>
+      <Remarks>
+      </Remarks>
+    </Attribute>
+    <Attribute Name="ProductionInitiated" DefaultValue="" MappedIsValidMember="m_IsValidProductionInitiated" MappedSetValidName="SetValidProductionInitiated" MappedIsValidName="IsValidProductionInitiated" MappedIsNilMember="m_IsNilProductionInitiated" MappedSetNilName="SetNilProductionInitiated" MappedIsNilName="IsNilProductionInitiated" MappedMemberName="m_ProductionInitiated" MappedDisplayName="ProductionInitiated" MappedSetterName="ProductionInitiated" MappedGetterName="ProductionInitiated" FormatOverride="">
+      <Description>
+      </Description>
+      <Remarks>
+      </Remarks>
+    </Attribute>
+    <Attribute Name="Collaborators" DefaultValue="" MappedIsValidMember="m_IsValidCollaborators" MappedSetValidName="SetValidCollaborators" MappedIsValidName="IsValidCollaborators" MappedIsNilMember="m_IsNilCollaborators" MappedSetNilName="SetNilCollaborators" MappedIsNilName="IsNilCollaborators" MappedMemberName="m_Collaborators" MappedDisplayName="Collaborators" MappedSetterName="Collaborators" MappedGetterName="Collaborators">
+      <Description>
+      </Description>
+      <Remarks>
+      </Remarks>
+    </Attribute>
+    <Attribute Name="ProductDetails" DefaultValue="" MappedIsValidMember="m_IsValidProductDetails" MappedSetValidName="SetValidProductDetails" MappedIsValidName="IsValidProductDetails" MappedIsNilMember="m_IsNilProductDetails" MappedSetNilName="SetNilProductDetails" MappedIsNilName="IsNilProductDetails" MappedMemberName="m_ProductDetails" MappedDisplayName="ProductDetails" MappedSetterName="ProductDetails" MappedGetterName="ProductDetails">
+      <Description>
+      </Description>
+      <Remarks>
+      </Remarks>
+    </Attribute>
+    <Attribute Name="LocalVersions" DefaultValue="" MappedIsValidMember="m_IsValidLocalVersions" MappedSetValidName="SetValidLocalVersions" MappedIsValidName="IsValidLocalVersions" MappedIsNilMember="m_IsNilLocalVersions" MappedSetNilName="SetNilLocalVersions" MappedIsNilName="IsNilLocalVersions" MappedMemberName="m_LocalVersions" MappedDisplayName="LocalVersions" MappedSetterName="LocalVersions" MappedGetterName="LocalVersions">
+      <Description>
+      </Description>
+      <Remarks>
+      </Remarks>
+    </Attribute>
+  </Class>
+  <Class Name="Product" LongName="Product" MappedClassColName="ProductCol" MappedClassName="Product">
+    <Description>
+    </Description>
+    <Remarks>This class exists to provide a base into which other interfaces can be placed, this is necessary because each class is either a sequence, choice or all. Without this class classes deriving from this, may contain elements that are part of a sequence and a choice, this would break the library.</Remarks>
+    <Attribute Name="CPRSProductID" DefaultValue="" MappedIsValidMember="m_IsValidCPRSProductID" MappedSetValidName="SetValidCPRSProductID" MappedIsValidName="IsValidCPRSProductID" MappedIsNilMember="m_IsNilCPRSProductID" MappedSetNilName="SetNilCPRSProductID" MappedIsNilName="IsNilCPRSProductID" MappedMemberName="m_CPRSProductID" MappedDisplayName="CPRSProductID" MappedSetterName="CPRSProductID" MappedGetterName="CPRSProductID" FormatOverride="">
+      <Description>
+      </Description>
+      <Remarks>
+      </Remarks>
+    </Attribute>
+    <Attribute Name="ProductUPC" DefaultValue="" MappedIsValidMember="m_IsValidProductUPC" MappedSetValidName="SetValidProductUPC" MappedIsValidName="IsValidProductUPC" MappedIsNilMember="m_IsNilProductUPC" MappedSetNilName="SetNilProductUPC" MappedIsNilName="IsNilProductUPC" MappedMemberName="m_ProductUPC" MappedDisplayName="ProductUPC" MappedSetterName="ProductUPC" MappedGetterName="ProductUPC" FormatOverride="">
+      <Description>
+      </Description>
+      <Remarks>
+      </Remarks>
+    </Attribute>
+    <Attribute Name="UPV" DefaultValue="" MappedIsValidMember="m_IsValidUPV" MappedSetValidName="SetValidUPV" MappedIsValidName="IsValidUPV" MappedIsNilMember="m_IsNilUPV" MappedSetNilName="SetNilUPV" MappedIsNilName="IsNilUPV" MappedMemberName="m_UPV" MappedDisplayName="UPV" MappedSetterName="UPV" MappedGetterName="UPV" FormatOverride="">
+      <Description>
+      </Description>
+      <Remarks>
+      </Remarks>
+    </Attribute>
+    <Attribute Name="R2ProductID" DefaultValue="" MappedIsValidMember="m_IsValidR2ProductID" MappedSetValidName="SetValidR2ProductID" MappedIsValidName="IsValidR2ProductID" MappedIsNilMember="m_IsNilR2ProductID" MappedSetNilName="SetNilR2ProductID" MappedIsNilName="IsNilR2ProductID" MappedMemberName="m_R2ProductID" MappedDisplayName="R2ProductID" MappedSetterName="R2ProductID" MappedGetterName="R2ProductID" FormatOverride="">
+      <Description>
+      </Description>
+      <Remarks>
+      </Remarks>
+    </Attribute>
+    <Attribute Name="R2ProjectID" DefaultValue="" MappedIsValidMember="m_IsValidR2ProjectID" MappedSetValidName="SetValidR2ProjectID" MappedIsValidName="IsValidR2ProjectID" MappedIsNilMember="m_IsNilR2ProjectID" MappedSetNilName="SetNilR2ProjectID" MappedIsNilName="IsNilR2ProjectID" MappedMemberName="m_R2ProjectID" MappedDisplayName="R2ProjectID" MappedSetterName="R2ProjectID" MappedGetterName="R2ProjectID" FormatOverride="">
+      <Description>
+      </Description>
+      <Remarks>
+      </Remarks>
+    </Attribute>
+    <Attribute Name="R2ConfigID" DefaultValue="" MappedIsValidMember="m_IsValidR2ConfigID" MappedSetValidName="SetValidR2ConfigID" MappedIsValidName="IsValidR2ConfigID" MappedIsNilMember="m_IsNilR2ConfigID" MappedSetNilName="SetNilR2ConfigID" MappedIsNilName="IsNilR2ConfigID" MappedMemberName="m_R2ConfigID" MappedDisplayName="R2ConfigID" MappedSetterName="R2ConfigID" MappedGetterName="R2ConfigID" FormatOverride="">
+      <Description>
+      </Description>
+      <Remarks>
+      </Remarks>
+    </Attribute>
+    <Attribute Name="CPRSArtist" DefaultValue="" MappedIsValidMember="m_IsValidCPRSArtist" MappedSetValidName="SetValidCPRSArtist" MappedIsValidName="IsValidCPRSArtist" MappedIsNilMember="m_IsNilCPRSArtist" MappedSetNilName="SetNilCPRSArtist" MappedIsNilName="IsNilCPRSArtist" MappedMemberName="m_CPRSArtist" MappedDisplayName="CPRSArtist" MappedSetterName="CPRSArtist" MappedGetterName="CPRSArtist" FormatOverride="">
+      <Description>
+      </Description>
+      <Remarks>
+      </Remarks>
+    </Attribute>
+    <Attribute Name="CPRSTitle" DefaultValue="" MappedIsValidMember="m_IsValidCPRSTitle" MappedSetValidName="SetValidCPRSTitle" MappedIsValidName="IsValidCPRSTitle" MappedIsNilMember="m_IsNilCPRSTitle" MappedSetNilName="SetNilCPRSTitle" MappedIsNilName="IsNilCPRSTitle" MappedMemberName="m_CPRSTitle" MappedDisplayName="CPRSTitle" MappedSetterName="CPRSTitle" MappedGetterName="CPRSTitle" FormatOverride="">
+      <Description>
+      </Description>
+      <Remarks>
+      </Remarks>
+    </Attribute>
+    <Attribute Name="CPRSVersionTitle" DefaultValue="" MappedIsValidMember="m_IsValidCPRSVersionTitle" MappedSetValidName="SetValidCPRSVersionTitle" MappedIsValidName="IsValidCPRSVersionTitle" MappedIsNilMember="m_IsNilCPRSVersionTitle" MappedSetNilName="SetNilCPRSVersionTitle" MappedIsNilName="IsNilCPRSVersionTitle" MappedMemberName="m_CPRSVersionTitle" MappedDisplayName="CPRSVersionTitle" MappedSetterName="CPRSVersionTitle" MappedGetterName="CPRSVersionTitle" FormatOverride="">
+      <Description>
+      </Description>
+      <Remarks>
+      </Remarks>
+    </Attribute>
+    <Attribute Name="LastUpdated" DefaultValue="" MappedIsValidMember="m_IsValidLastUpdated" MappedSetValidName="SetValidLastUpdated" MappedIsValidName="IsValidLastUpdated" MappedIsNilMember="m_IsNilLastUpdated" MappedSetNilName="SetNilLastUpdated" MappedIsNilName="IsNilLastUpdated" MappedMemberName="m_LastUpdated" MappedDisplayName="LastUpdated" MappedSetterName="LastUpdated" MappedGetterName="LastUpdated" FormatOverride="">
+      <Description>
+      </Description>
+      <Remarks>
+      </Remarks>
+    </Attribute>
+    <Attribute Name="HasExplicitLyrics" DefaultValue="" MappedIsValidMember="m_IsValidHasExplicitLyrics" MappedSetValidName="SetValidHasExplicitLyrics" MappedIsValidName="IsValidHasExplicitLyrics" MappedIsNilMember="m_IsNilHasExplicitLyrics" MappedSetNilName="SetNilHasExplicitLyrics" MappedIsNilName="IsNilHasExplicitLyrics" MappedMemberName="m_HasExplicitLyrics" MappedDisplayName="HasExplicitLyrics" MappedSetterName="HasExplicitLyrics" MappedGetterName="HasExplicitLyrics" FormatOverride="">
+      <Description>
+      </Description>
+      <Remarks>
+      </Remarks>
+    </Attribute>
+    <Attribute Name="CPRSMusicType" DefaultValue="" MappedIsValidMember="m_IsValidCPRSMusicType" MappedSetValidName="SetValidCPRSMusicType" MappedIsValidName="IsValidCPRSMusicType" MappedIsNilMember="m_IsNilCPRSMusicType" MappedSetNilName="SetNilCPRSMusicType" MappedIsNilName="IsNilCPRSMusicType" MappedMemberName="m_CPRSMusicType" MappedDisplayName="CPRSMusicType" MappedSetterName="CPRSMusicType" MappedGetterName="CPRSMusicType">
+      <Description>
+      </Description>
+      <Remarks>
+      </Remarks>
+    </Attribute>
+    <Attribute Name="CPRSManufacturingType" DefaultValue="" MappedIsValidMember="m_IsValidCPRSManufacturingType" MappedSetValidName="SetValidCPRSManufacturingType" MappedIsValidName="IsValidCPRSManufacturingType" MappedIsNilMember="m_IsNilCPRSManufacturingType" MappedSetNilName="SetNilCPRSManufacturingType" MappedIsNilName="IsNilCPRSManufacturingType" MappedMemberName="m_CPRSManufacturingType" MappedDisplayName="CPRSManufacturingType" MappedSetterName="CPRSManufacturingType" MappedGetterName="CPRSManufacturingType">
+      <Description>
+      </Description>
+      <Remarks>
+      </Remarks>
+    </Attribute>
+    <Attribute Name="IsPriorityRelease" DefaultValue="" MappedIsValidMember="m_IsValidIsPriorityRelease" MappedSetValidName="SetValidIsPriorityRelease" MappedIsValidName="IsValidIsPriorityRelease" MappedIsNilMember="m_IsNilIsPriorityRelease" MappedSetNilName="SetNilIsPriorityRelease" MappedIsNilName="IsNilIsPriorityRelease" MappedMemberName="m_IsPriorityRelease" MappedDisplayName="IsPriorityRelease" MappedSetterName="IsPriorityRelease" MappedGetterName="IsPriorityRelease" FormatOverride="">
+      <Description>
+      </Description>
+      <Remarks>
+      </Remarks>
+    </Attribute>
+    <Attribute Name="Embargo" DefaultValue="" MappedIsValidMember="m_IsValidEmbargo" MappedSetValidName="SetValidEmbargo" MappedIsValidName="IsValidEmbargo" MappedIsNilMember="m_IsNilEmbargo" MappedSetNilName="SetNilEmbargo" MappedIsNilName="IsNilEmbargo" MappedMemberName="m_Embargo" MappedDisplayName="Embargo" MappedSetterName="Embargo" MappedGetterName="Embargo" FormatOverride="">
+      <Description>
+      </Description>
+      <Remarks>
+      </Remarks>
+    </Attribute>
+    <Attribute Name="IsMerchandise" DefaultValue="" MappedIsValidMember="m_IsValidIsMerchandise" MappedSetValidName="SetValidIsMerchandise" MappedIsValidName="IsValidIsMerchandise" MappedIsNilMember="m_IsNilIsMerchandise" MappedSetNilName="SetNilIsMerchandise" MappedIsNilName="IsNilIsMerchandise" MappedMemberName="m_IsMerchandise" MappedDisplayName="IsMerchandise" MappedSetterName="IsMerchandise" MappedGetterName="IsMerchandise" FormatOverride="">
+      <Description>
+      </Description>
+      <Remarks>
+      </Remarks>
+    </Attribute>
+    <Attribute Name="CPRSMarketingDivision" DefaultValue="" MappedIsValidMember="m_IsValidCPRSMarketingDivision" MappedSetValidName="SetValidCPRSMarketingDivision" MappedIsValidName="IsValidCPRSMarketingDivision" MappedIsNilMember="m_IsNilCPRSMarketingDivision" MappedSetNilName="SetNilCPRSMarketingDivision" MappedIsNilName="IsNilCPRSMarketingDivision" MappedMemberName="m_CPRSMarketingDivision" MappedDisplayName="CPRSMarketingDivision" MappedSetterName="CPRSMarketingDivision" MappedGetterName="CPRSMarketingDivision" FormatOverride="">
+      <Description>
+      </Description>
+      <Remarks>
+      </Remarks>
+    </Attribute>
+    <Attribute Name="CPRSRepertoireOwnerLabel" DefaultValue="" MappedIsValidMember="m_IsValidCPRSRepertoireOwnerLabel" MappedSetValidName="SetValidCPRSRepertoireOwnerLabel" MappedIsValidName="IsValidCPRSRepertoireOwnerLabel" MappedIsNilMember="m_IsNilCPRSRepertoireOwnerLabel" MappedSetNilName="SetNilCPRSRepertoireOwnerLabel" MappedIsNilName="IsNilCPRSRepertoireOwnerLabel" MappedMemberName="m_CPRSRepertoireOwnerLabel" MappedDisplayName="CPRSRepertoireOwnerLabel" MappedSetterName="CPRSRepertoireOwnerLabel" MappedGetterName="CPRSRepertoireOwnerLabel">
+      <Description>
+      </Description>
+      <Remarks>
+      </Remarks>
+    </Attribute>
+    <Attribute Name="CPRSReleasingLabel" DefaultValue="" MappedIsValidMember="m_IsValidCPRSReleasingLabel" MappedSetValidName="SetValidCPRSReleasingLabel" MappedIsValidName="IsValidCPRSReleasingLabel" MappedIsNilMember="m_IsNilCPRSReleasingLabel" MappedSetNilName="SetNilCPRSReleasingLabel" MappedIsNilName="IsNilCPRSReleasingLabel" MappedMemberName="m_CPRSReleasingLabel" MappedDisplayName="CPRSReleasingLabel" MappedSetterName="CPRSReleasingLabel" MappedGetterName="CPRSReleasingLabel">
+      <Description>
+      </Description>
+      <Remarks>
+      </Remarks>
+    </Attribute>
+    <Attribute Name="CPRSReleasingTerritory" DefaultValue="" MappedIsValidMember="m_IsValidCPRSReleasingTerritory" MappedSetValidName="SetValidCPRSReleasingTerritory" MappedIsValidName="IsValidCPRSReleasingTerritory" MappedIsNilMember="m_IsNilCPRSReleasingTerritory" MappedSetNilName="SetNilCPRSReleasingTerritory" MappedIsNilName="IsNilCPRSReleasingTerritory" MappedMemberName="m_CPRSReleasingTerritory" MappedDisplayName="CPRSReleasingTerritory" MappedSetterName="CPRSReleasingTerritory" MappedGetterName="CPRSReleasingTerritory">
+      <Description>
+      </Description>
+      <Remarks>
+      </Remarks>
+    </Attribute>
+    <Attribute Name="ProductionInitiated" DefaultValue="" MappedIsValidMember="m_IsValidProductionInitiated" MappedSetValidName="SetValidProductionInitiated" MappedIsValidName="IsValidProductionInitiated" MappedIsNilMember="m_IsNilProductionInitiated" MappedSetNilName="SetNilProductionInitiated" MappedIsNilName="IsNilProductionInitiated" MappedMemberName="m_ProductionInitiated" MappedDisplayName="ProductionInitiated" MappedSetterName="ProductionInitiated" MappedGetterName="ProductionInitiated" FormatOverride="">
+      <Description>
+      </Description>
+      <Remarks>
+      </Remarks>
+    </Attribute>
+    <Attribute Name="Collaborators" DefaultValue="" MappedIsValidMember="m_IsValidCollaborators" MappedSetValidName="SetValidCollaborators" MappedIsValidName="IsValidCollaborators" MappedIsNilMember="m_IsNilCollaborators" MappedSetNilName="SetNilCollaborators" MappedIsNilName="IsNilCollaborators" MappedMemberName="m_Collaborators" MappedDisplayName="Collaborators" MappedSetterName="Collaborators" MappedGetterName="Collaborators">
+      <Description>
+      </Description>
+      <Remarks>
+      </Remarks>
+    </Attribute>
+    <Attribute Name="ProductDetails" DefaultValue="" MappedIsValidMember="m_IsValidProductDetails" MappedSetValidName="SetValidProductDetails" MappedIsValidName="IsValidProductDetails" MappedIsNilMember="m_IsNilProductDetails" MappedSetNilName="SetNilProductDetails" MappedIsNilName="IsNilProductDetails" MappedMemberName="m_ProductDetails" MappedDisplayName="ProductDetails" MappedSetterName="ProductDetails" MappedGetterName="ProductDetails">
+      <Description>
+      </Description>
+      <Remarks>
+      </Remarks>
+    </Attribute>
+    <Attribute Name="LocalVersions" DefaultValue="" MappedIsValidMember="m_IsValidLocalVersions" MappedSetValidName="SetValidLocalVersions" MappedIsValidName="IsValidLocalVersions" MappedIsNilMember="m_IsNilLocalVersions" MappedSetNilName="SetNilLocalVersions" MappedIsNilName="IsNilLocalVersions" MappedMemberName="m_LocalVersions" MappedDisplayName="LocalVersions" MappedSetterName="LocalVersions" MappedGetterName="LocalVersions">
+      <Description>
+      </Description>
+      <Remarks>
+      </Remarks>
+    </Attribute>
+  </Class>
+  <Class Name="Product_Type_Seq_ProductDetails_Type" LongName="Product_Type_Seq_ProductDetails_Type" MappedClassColName="Product_Type_Seq_ProductDetails_TypeCol" MappedClassName="Product_Type_Seq_ProductDetails_Type">
+    <Description>
+    </Description>
+    <Remarks>
+    </Remarks>
+    <Attribute Name="PhysicalDetails" DefaultValue="" MappedIsValidMember="m_IsValidPhysicalDetails" MappedSetValidName="SetValidPhysicalDetails" MappedIsValidName="IsValidPhysicalDetails" MappedIsNilMember="m_IsNilPhysicalDetails" MappedSetNilName="SetNilPhysicalDetails" MappedIsNilName="IsNilPhysicalDetails" MappedMemberName="m_PhysicalDetails" MappedDisplayName="PhysicalDetails" MappedSetterName="PhysicalDetails" MappedGetterName="PhysicalDetails">
+      <Description>
+      </Description>
+      <Remarks>
+      </Remarks>
+    </Attribute>
+  </Class>
+  <Class Name="ProductCommon" LongName="ProductCommon" MappedClassColName="ProductCommonCol" MappedClassName="ProductCommon">
+    <Description>
+    </Description>
+    <Remarks>This class exists to provide a base into which other interfaces can be placed, this is necessary because each class is either a sequence, choice or all. Without this class classes deriving from this, may contain elements that are part of a sequence and a choice, this would break the library.</Remarks>
+    <Attribute Name="ReleaseDate" DefaultValue="" MappedIsValidMember="m_IsValidReleaseDate" MappedSetValidName="SetValidReleaseDate" MappedIsValidName="IsValidReleaseDate" MappedIsNilMember="m_IsNilReleaseDate" MappedSetNilName="SetNilReleaseDate" MappedIsNilName="IsNilReleaseDate" MappedMemberName="m_ReleaseDate" MappedDisplayName="ReleaseDate" MappedSetterName="ReleaseDate" MappedGetterName="ReleaseDate" FormatOverride="">
+      <Description>
+      </Description>
+      <Remarks>
+      </Remarks>
+    </Attribute>
+    <Attribute Name="CPRSVersionTitle" DefaultValue="" MappedIsValidMember="m_IsValidCPRSVersionTitle" MappedSetValidName="SetValidCPRSVersionTitle" MappedIsValidName="IsValidCPRSVersionTitle" MappedIsNilMember="m_IsNilCPRSVersionTitle" MappedSetNilName="SetNilCPRSVersionTitle" MappedIsNilName="IsNilCPRSVersionTitle" MappedMemberName="m_CPRSVersionTitle" MappedDisplayName="CPRSVersionTitle" MappedSetterName="CPRSVersionTitle" MappedGetterName="CPRSVersionTitle" FormatOverride="">
+      <Description>
+      </Description>
+      <Remarks>
+      </Remarks>
+    </Attribute>
+    <Attribute Name="CPRSProductType" DefaultValue="" MappedIsValidMember="m_IsValidCPRSProductType" MappedSetValidName="SetValidCPRSProductType" MappedIsValidName="IsValidCPRSProductType" MappedIsNilMember="m_IsNilCPRSProductType" MappedSetNilName="SetNilCPRSProductType" MappedIsNilName="IsNilCPRSProductType" MappedMemberName="m_CPRSProductType" MappedDisplayName="CPRSProductType" MappedSetterName="CPRSProductType" MappedGetterName="CPRSProductType">
+      <Description>
+      </Description>
+      <Remarks>
+      </Remarks>
+    </Attribute>
+    <Attribute Name="CPRSStatus" DefaultValue="" MappedIsValidMember="m_IsValidCPRSStatus" MappedSetValidName="SetValidCPRSStatus" MappedIsValidName="IsValidCPRSStatus" MappedIsNilMember="m_IsNilCPRSStatus" MappedSetNilName="SetNilCPRSStatus" MappedIsNilName="IsNilCPRSStatus" MappedMemberName="m_CPRSStatus" MappedDisplayName="CPRSStatus" MappedSetterName="CPRSStatus" MappedGetterName="CPRSStatus">
+      <Description>
+      </Description>
+      <Remarks>
+      </Remarks>
+    </Attribute>
+    <Attribute Name="CPRSFormatCode" DefaultValue="" MappedIsValidMember="m_IsValidCPRSFormatCode" MappedSetValidName="SetValidCPRSFormatCode" MappedIsValidName="IsValidCPRSFormatCode" MappedIsNilMember="m_IsNilCPRSFormatCode" MappedSetNilName="SetNilCPRSFormatCode" MappedIsNilName="IsNilCPRSFormatCode" MappedMemberName="m_CPRSFormatCode" MappedDisplayName="CPRSFormatCode" MappedSetterName="CPRSFormatCode" MappedGetterName="CPRSFormatCode">
+      <Description>
+      </Description>
+      <Remarks>
+      </Remarks>
+    </Attribute>
+    <Attribute Name="CPRSConfigID" DefaultValue="" MappedIsValidMember="m_IsValidCPRSConfigID" MappedSetValidName="SetValidCPRSConfigID" MappedIsValidName="IsValidCPRSConfigID" MappedIsNilMember="m_IsNilCPRSConfigID" MappedSetNilName="SetNilCPRSConfigID" MappedIsNilName="IsNilCPRSConfigID" MappedMemberName="m_CPRSConfigID" MappedDisplayName="CPRSConfigID" MappedSetterName="CPRSConfigID" MappedGetterName="CPRSConfigID" FormatOverride="">
+      <Description>
+      </Description>
+      <Remarks>
+      </Remarks>
+    </Attribute>
+    <Attribute Name="Manufacturers" DefaultValue="" MappedIsValidMember="m_IsValidManufacturers" MappedSetValidName="SetValidManufacturers" MappedIsValidName="IsValidManufacturers" MappedIsNilMember="m_IsNilManufacturers" MappedSetNilName="SetNilManufacturers" MappedIsNilName="IsNilManufacturers" MappedMemberName="m_Manufacturers" MappedDisplayName="Manufacturers" MappedSetterName="Manufacturers" MappedGetterName="Manufacturers">
+      <Description>
+      </Description>
+      <Remarks>
+      </Remarks>
+    </Attribute>
+    <Attribute Name="ManufactureLocation" DefaultValue="" MappedIsValidMember="m_IsValidManufactureLocation" MappedSetValidName="SetValidManufactureLocation" MappedIsValidName="IsValidManufactureLocation" MappedIsNilMember="m_IsNilManufactureLocation" MappedSetNilName="SetNilManufactureLocation" MappedIsNilName="IsNilManufactureLocation" MappedMemberName="m_ManufactureLocation" MappedDisplayName="ManufactureLocation" MappedSetterName="ManufactureLocation" MappedGetterName="ManufactureLocation">
+      <Description>
+      </Description>
+      <Remarks>
+      </Remarks>
+    </Attribute>
+    <Attribute Name="CPRSPriceCode" DefaultValue="" MappedIsValidMember="m_IsValidCPRSPriceCode" MappedSetValidName="SetValidCPRSPriceCode" MappedIsValidName="IsValidCPRSPriceCode" MappedIsNilMember="m_IsNilCPRSPriceCode" MappedSetNilName="SetNilCPRSPriceCode" MappedIsNilName="IsNilCPRSPriceCode" MappedMemberName="m_CPRSPriceCode" MappedDisplayName="CPRSPriceCode" MappedSetterName="CPRSPriceCode" MappedGetterName="CPRSPriceCode" FormatOverride="">
+      <Description>
+      </Description>
+      <Remarks>
+      </Remarks>
+    </Attribute>
+    <Attribute Name="Comments" DefaultValue="" MappedIsValidMember="m_IsValidComments" MappedSetValidName="SetValidComments" MappedIsValidName="IsValidComments" MappedIsNilMember="m_IsNilComments" MappedSetNilName="SetNilComments" MappedIsNilName="IsNilComments" MappedMemberName="m_Comments" MappedDisplayName="Comments" MappedSetterName="Comments" MappedGetterName="Comments" FormatOverride="">
+      <Description>
+      </Description>
+      <Remarks>
+      </Remarks>
+    </Attribute>
+  </Class>
+  <Class Name="ProductDetails" LongName="ProductDetails" MappedClassColName="ProductDetailsCol" MappedClassName="ProductDetails">
+    <Description>
+    </Description>
+    <Remarks>
+    </Remarks>
+    <Attribute Name="ProductMedium" DefaultValue="" MappedIsValidMember="m_IsValidProductMedium" MappedSetValidName="SetValidProductMedium" MappedIsValidName="IsValidProductMedium" MappedIsNilMember="m_IsNilProductMedium" MappedSetNilName="SetNilProductMedium" MappedIsNilName="IsNilProductMedium" MappedMemberName="m_ProductMedium" MappedDisplayName="ProductMedium" MappedSetterName="ProductMediumA" MappedGetterName="ProductMediumA">
+      <Description>
+      </Description>
+      <Remarks>
+      </Remarks>
+    </Attribute>
+    <Attribute Name="Product_Type_Seq_ProductDetailsData" DefaultValue="" MappedIsValidMember="m_IsValidProduct_Type_Seq_ProductDetailsData" MappedSetValidName="SetValidProduct_Type_Seq_ProductDetailsData" MappedIsValidName="IsValidProduct_Type_Seq_ProductDetailsData" MappedIsNilMember="m_IsNilProduct_Type_Seq_ProductDetailsData" MappedSetNilName="SetNilProduct_Type_Seq_ProductDetailsData" MappedIsNilName="IsNilProduct_Type_Seq_ProductDetailsData" MappedMemberName="m_Product_Type_Seq_ProductDetailsData" MappedDisplayName="Product_Type_Seq_ProductDetailsData" MappedSetterName="Product_Type_Seq_ProductDetailsData" MappedGetterName="Product_Type_Seq_ProductDetailsData">
+      <Description>
+      </Description>
+      <Remarks>
+      </Remarks>
+    </Attribute>
+  </Class>
+  <Class Name="ProductMedium" LongName="ProductMedium" MappedClassColName="ProductMediumCol" MappedClassName="ProductMedium">
+    <Description>
+    </Description>
+    <Remarks>This class exists to provide a base into which other interfaces can be placed, this is necessary because each class is either a sequence, choice or all. Without this class classes deriving from this, may contain elements that are part of a sequence and a choice, this would break the library.</Remarks>
+    <Attribute Name="ProductMedium" DefaultValue="" MappedIsValidMember="m_IsValidProductMedium" MappedSetValidName="SetValidProductMedium" MappedIsValidName="IsValidProductMedium" MappedIsNilMember="m_IsNilProductMedium" MappedSetNilName="SetNilProductMedium" MappedIsNilName="IsNilProductMedium" MappedMemberName="m_ProductMedium" MappedDisplayName="ProductMedium" MappedSetterName="ProductMediumA" MappedGetterName="ProductMediumA">
+      <Description>
+      </Description>
+      <Remarks>
+      </Remarks>
+    </Attribute>
+  </Class>
+  <Class Name="ReleasingLabel_Nillable" LongName="ReleasingLabel_Nillable" MappedClassColName="ReleasingLabel_NillableCol" MappedClassName="ReleasingLabel_Nillable">
+    <Description>
+    </Description>
+    <Remarks>
+    </Remarks>
+    <Attribute Name="LabelID" DefaultValue="" MappedIsValidMember="m_IsValidLabelID" MappedSetValidName="SetValidLabelID" MappedIsValidName="IsValidLabelID" MappedIsNilMember="m_IsNilLabelID" MappedSetNilName="SetNilLabelID" MappedIsNilName="IsNilLabelID" MappedMemberName="m_LabelID" MappedDisplayName="LabelID" MappedSetterName="LabelID" MappedGetterName="LabelID" FormatOverride="">
+      <Description>
+      </Description>
+      <Remarks>
+      </Remarks>
+    </Attribute>
+    <Attribute Name="LabelName" DefaultValue="" MappedIsValidMember="m_IsValidLabelName" MappedSetValidName="SetValidLabelName" MappedIsValidName="IsValidLabelName" MappedIsNilMember="m_IsNilLabelName" MappedSetNilName="SetNilLabelName" MappedIsNilName="IsNilLabelName" MappedMemberName="m_LabelName" MappedDisplayName="LabelName" MappedSetterName="LabelName" MappedGetterName="LabelName" FormatOverride="">
+      <Description>
+      </Description>
+      <Remarks>
+      </Remarks>
+    </Attribute>
+  </Class>
+  <Class Name="ReorderInfo" LongName="ReorderInfo" MappedClassColName="ReorderInfoCol" MappedClassName="ReorderInfo">
+    <Description>
+    </Description>
+    <Remarks>
+    </Remarks>
+    <Attribute Name="Quantity" DefaultValue="" MappedIsValidMember="m_IsValidQuantity" MappedSetValidName="SetValidQuantity" MappedIsValidName="IsValidQuantity" MappedIsNilMember="m_IsNilQuantity" MappedSetNilName="SetNilQuantity" MappedIsNilName="IsNilQuantity" MappedMemberName="m_Quantity" MappedDisplayName="Quantity" MappedSetterName="Quantity" MappedGetterName="Quantity" FormatOverride="">
+      <Description>
+      </Description>
+      <Remarks>
+      </Remarks>
+    </Attribute>
+    <Attribute Name="Time" DefaultValue="" MappedIsValidMember="m_IsValidTime" MappedSetValidName="SetValidTime" MappedIsValidName="IsValidTime" MappedIsNilMember="m_IsNilTime" MappedSetNilName="SetNilTime" MappedIsNilName="IsNilTime" MappedMemberName="m_Time" MappedDisplayName="Time" MappedSetterName="Time" MappedGetterName="Time" FormatOverride="">
+      <Description>
+      </Description>
+      <Remarks>
+      </Remarks>
+    </Attribute>
+  </Class>
+  <Namespace SchemaNamespace="" SchemaAlias="" ClassNamespace="CprsV1" />
+  <Namespace SchemaNamespace="urn:schemas-microsoft-com:xml-msdata" SchemaAlias="msdata" ClassNamespace="CprsV1.msdata" />
+  <Namespace SchemaNamespace="http://umusic.net/webservices/itdi/vanilla" SchemaAlias="" ClassNamespace="CprsV1.tns" />
+</MappingSchema>

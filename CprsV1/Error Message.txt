@@ -1,0 +1,35 @@
+﻿c:\GitHub\liquid-technologies-2018-bug\CprsV1>"C:\Program Files\Liquid Technologies\Liquid Studio 2018\XmlDataBinder16\LXDB16.exe" /NG /V /T XSD /F "Schemas\PhysicalReleaseSchedule_V1.0.xsd" /L C# /TP Standard20 /X ".." /O "CprsV1" /Col PLUR /NP /N "CprsV1"
+LXDB 16.1.19.8878 Building Project...
+OutputReport.txt
+c:\GitHub\liquid-technologies-2018-bug\CprsV1\\CprsV1_tns\Approver_Nillable.cs
+c:\GitHub\liquid-technologies-2018-bug\CprsV1\\CprsV1_tns\CodeDescType.cs
+c:\GitHub\liquid-technologies-2018-bug\CprsV1\\CprsV1_tns\Collaborators.cs
+c:\GitHub\liquid-technologies-2018-bug\CprsV1\\CprsV1_tns\Component.cs
+c:\GitHub\liquid-technologies-2018-bug\CprsV1\\CprsV1_tns\Component_Nillable.cs
+c:\GitHub\liquid-technologies-2018-bug\CprsV1\\CprsV1_tns\Components.cs
+c:\GitHub\liquid-technologies-2018-bug\CprsV1\\CprsV1_tns\CoreProductInfo.cs
+c:\GitHub\liquid-technologies-2018-bug\CprsV1\\CprsV1_tns\CoreProductInformation.cs
+c:\GitHub\liquid-technologies-2018-bug\CprsV1\\CprsV1_tns\Country.cs
+c:\GitHub\liquid-technologies-2018-bug\CprsV1\\CprsV1_tns\CPRSReleasingTerritory.cs
+c:\GitHub\liquid-technologies-2018-bug\CprsV1\\CprsV1_tns\CPRSReleasingTerritory_Choice.cs
+c:\GitHub\liquid-technologies-2018-bug\CprsV1\\CprsV1_tns\DistributionOnly.cs
+c:\GitHub\liquid-technologies-2018-bug\CprsV1\\CprsV1_tns\ICoreProductInfo.cs
+c:\GitHub\liquid-technologies-2018-bug\CprsV1\\CprsV1_tns\ILocalVersionType.cs
+c:\GitHub\liquid-technologies-2018-bug\CprsV1\\CprsV1_tns\IMS.cs
+c:\GitHub\liquid-technologies-2018-bug\CprsV1\\CprsV1_tns\InitialOrderApproval.cs
+c:\GitHub\liquid-technologies-2018-bug\CprsV1\\CprsV1_tns\InitialOrderValidation_Nillable.cs
+c:\GitHub\liquid-technologies-2018-bug\CprsV1\\CprsV1_tns\IProductCommon.cs
+c:\GitHub\liquid-technologies-2018-bug\CprsV1\\CprsV1_tns\IProductMedium.cs
+c:\GitHub\liquid-technologies-2018-bug\CprsV1\\CprsV1_tns\LabelType.cs
+c:\GitHub\liquid-technologies-2018-bug\CprsV1\\CprsV1_tns\LocalVersion.cs
+c:\GitHub\liquid-technologies-2018-bug\CprsV1\\CprsV1_tns\LocalVersions.cs
+c:\GitHub\liquid-technologies-2018-bug\CprsV1\\CprsV1_tns\LocalVersionType.cs
+c:\GitHub\liquid-technologies-2018-bug\CprsV1\\CprsV1_tns\ManufactureLocation.cs
+c:\GitHub\liquid-technologies-2018-bug\CprsV1\\CprsV1_tns\Manufacturers.cs
+c:\GitHub\liquid-technologies-2018-bug\CprsV1\\CprsV1_tns\ManufacturerType.cs
+c:\GitHub\liquid-technologies-2018-bug\CprsV1\\CprsV1_tns\Person.cs
+Error: StartIndex cannot be less than zero.
+Parameter name: startIndex
+Error Code: 2
+
+c:\GitHub\liquid-technologies-2018-bug\CprsV1>

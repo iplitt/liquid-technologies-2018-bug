@@ -1,0 +1,284 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- edited with XMLSPY v2004 rel. 4 U (http://www.xmlspy.com) by Any Authorised User (Teksys Ltd) -->
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns="http://umusic.net/webservices/itdi/vanilla" targetNamespace="http://umusic.net/webservices/itdi/vanilla" elementFormDefault="qualified" attributeFormDefault="unqualified" version="5.0">
+	<xs:include schemaLocation="CoreProductInfo.xsd"/>
+	<xs:include schemaLocation="PhysicalProductDetails.xsd"/>
+	<xs:complexType name="Product">
+		<xs:annotation>
+			<xs:documentation>Complete product catering for digital and physical products alike</xs:documentation>
+		</xs:annotation>
+		<xs:complexContent>
+			<xs:extension base="CoreProductInfo">
+				<xs:sequence>
+					<xs:annotation>
+						<xs:documentation>Collection of elements whose values are shared and common to both physical and digital products followed by the specific digital and physical details</xs:documentation>
+					</xs:annotation>
+					<xs:element name="CPRSArtist" nillable="false">
+						<xs:annotation>
+							<xs:documentation>Principal artist(s) or group(s) of product.</xs:documentation>
+						</xs:annotation>
+						<xs:simpleType>
+							<xs:restriction base="xs:string">
+								<xs:maxLength value="255"/>
+							</xs:restriction>
+						</xs:simpleType>
+					</xs:element>
+					<xs:element name="CPRSTitle" nillable="false">
+						<xs:annotation>
+							<xs:documentation>Title of Product in CPRS.</xs:documentation>
+						</xs:annotation>
+						<xs:simpleType>
+							<xs:restriction base="xs:string">
+								<xs:maxLength value="255"/>
+							</xs:restriction>
+						</xs:simpleType>
+					</xs:element>
+					<xs:element name="CPRSVersionTitle" nillable="true" minOccurs="0">
+						<xs:annotation>
+							<xs:documentation>Used to distinguish between different versions, e.g. retailer exclusives, NTSC or PAL, etc. </xs:documentation>
+						</xs:annotation>
+						<xs:simpleType>
+							<xs:restriction base="xs:string">
+								<xs:maxLength value="255"/>
+							</xs:restriction>
+						</xs:simpleType>
+					</xs:element>
+					<xs:element name="LastUpdated" type="xs:dateTime" nillable="false">
+						<xs:annotation>
+							<xs:documentation>When the record was last amended in CPRS.</xs:documentation>
+						</xs:annotation>
+					</xs:element>
+					<xs:element name="HasExplicitLyrics" type="xs:boolean" nillable="false">
+						<xs:annotation>
+							<xs:documentation>Specifies if the product has explicit lyrics.</xs:documentation>
+						</xs:annotation>
+					</xs:element>
+					<xs:element name="CPRSMusicType" nillable="false">
+						<xs:annotation>
+							<xs:documentation>The music type of the product. Displayed in CPRS as Music Type.</xs:documentation>
+						</xs:annotation>
+						<xs:simpleType>
+							<xs:restriction base="xs:string">
+								<xs:maxLength value="255"/>
+								<xs:enumeration value="Pop"/>
+								<xs:enumeration value="ClassicsAndJazz"/>
+							</xs:restriction>
+						</xs:simpleType>
+					</xs:element>
+					<xs:element name="CPRSManufacturingType" nillable="false">
+						<xs:annotation>
+							<xs:documentation>The Manufacturing Type of the product. Affects BoM print prices.</xs:documentation>
+						</xs:annotation>
+						<xs:simpleType>
+							<xs:restriction base="xs:string">
+								<xs:maxLength value="255"/>
+								<xs:enumeration value="Pop"/>
+								<xs:enumeration value="ClassicsAndJazz"/>
+							</xs:restriction>
+						</xs:simpleType>
+					</xs:element>
+					<xs:element name="IsPriorityRelease" type="xs:boolean" nillable="false">
+						<xs:annotation>
+							<xs:documentation>Specifies whether this is a priority release and is backed by extensive marketing activity meaning the release date is less flexible.</xs:documentation>
+						</xs:annotation>
+					</xs:element>
+					<xs:element name="Embargo" type="xs:boolean" nillable="false">
+						<xs:annotation>
+							<xs:documentation>Identifier that allows Production users to indicate when a product is subject to an embargo (i.e. cannot be delivered to a business partner or retailer before a certain date).</xs:documentation>
+						</xs:annotation>
+					</xs:element>
+					<xs:element name="IsMerchandise" type="xs:boolean" nillable="false">
+						<xs:annotation>
+							<xs:documentation>Identifies if the product is Merchandise or not.</xs:documentation>
+						</xs:annotation>
+					</xs:element>
+					<xs:element name="CPRSMarketingDivision" nillable="false">
+						<xs:annotation>
+							<xs:documentation>The marketing division that is controlling the marketing of this product. See CPRSLegalValues.xls for full list.</xs:documentation>
+						</xs:annotation>
+						<xs:simpleType>
+							<xs:list itemType="xs:string"/>
+						</xs:simpleType>
+					</xs:element>
+					<xs:element name="CPRSRepertoireOwnerLabel" type="LabelType">
+						<xs:annotation>
+							<xs:documentation>This field contains information about the label that owns the rights to the product. See CPRSLegalValues.xls for full list.</xs:documentation>
+						</xs:annotation>
+					</xs:element>
+					<xs:element name="CPRSReleasingLabel" type="LabelType" minOccurs="0">
+						<xs:annotation>
+							<xs:documentation>This field contains information about the label that is releasing the product. See CPRSLegalValues.xls for full list. </xs:documentation>
+						</xs:annotation>
+					</xs:element>
+					<xs:element name="CPRSReleasingTerritory" nillable="false">
+						<xs:annotation>
+							<xs:documentation>The country that is the primary releaser of the product. See Country in CPRSLegalValues.xls for full list.</xs:documentation>
+						</xs:annotation>
+						<xs:complexType>
+							<xs:sequence>
+								<xs:choice>
+									<xs:element name="ISO" type="xs:string"/>
+									<xs:element name="TransNat">
+										<xs:annotation>
+											<xs:documentation>In the event that a transnational is the releasing territory an ISO code is not returned but one of three values representing International, Decca or Deutsche Gramaphon.</xs:documentation>
+										</xs:annotation>
+										<xs:simpleType>
+											<xs:restriction base="xs:string">
+												<xs:enumeration value="DGG"/>
+												<xs:enumeration value="DEC"/>
+												<xs:enumeration value="INT"/>
+											</xs:restriction>
+										</xs:simpleType>
+									</xs:element>
+								</xs:choice>
+								<xs:element name="Name" type="xs:string" nillable="true"/>
+							</xs:sequence>
+						</xs:complexType>
+					</xs:element>
+					<xs:element name="ProductionInitiated" type="xs:boolean" nillable="false">
+						<xs:annotation>
+							<xs:documentation> Specifies whether the product has initiated production or not.</xs:documentation>
+						</xs:annotation>
+					</xs:element>
+					<xs:element name="Collaborators" nillable="true" minOccurs="0">
+						<xs:annotation>
+							<xs:documentation>A list of participants involved in the management of the production process.</xs:documentation>
+						</xs:annotation>
+						<xs:complexType>
+							<xs:sequence>
+								<xs:element name="Person" nillable="true" minOccurs="0" maxOccurs="unbounded">
+									<xs:complexType>
+										<xs:sequence>
+											<xs:element name="Role">
+												<xs:simpleType>
+													<xs:restriction base="xs:string">
+														<xs:maxLength value="50"/>
+													</xs:restriction>
+												</xs:simpleType>
+											</xs:element>
+											<xs:element name="FirstName">
+												<xs:simpleType>
+													<xs:restriction base="xs:string">
+														<xs:maxLength value="50"/>
+													</xs:restriction>
+												</xs:simpleType>
+											</xs:element>
+											<xs:element name="Lastname">
+												<xs:simpleType>
+													<xs:restriction base="xs:string">
+														<xs:maxLength value="50"/>
+													</xs:restriction>
+												</xs:simpleType>
+											</xs:element>
+										</xs:sequence>
+									</xs:complexType>
+								</xs:element>
+							</xs:sequence>
+						</xs:complexType>
+					</xs:element>
+					<xs:element name="ProductDetails" maxOccurs="1">
+						<xs:complexType>
+							<xs:complexContent>
+								<xs:extension base="ProductMedium">
+									<xs:choice>
+										<xs:element name="PhysicalDetails" type="PhysicalProductDetails"/>
+									</xs:choice>
+								</xs:extension>
+							</xs:complexContent>
+						</xs:complexType>
+					</xs:element>
+					<xs:element name="LocalVersions" nillable="true" minOccurs="0">
+						<xs:annotation>
+							<xs:documentation>Local language versions of the products are versions of an international product that have been slightly altered for release in local territories.</xs:documentation>
+						</xs:annotation>
+						<xs:complexType>
+							<xs:sequence>
+								<xs:element name="LocalVersion" minOccurs="0" maxOccurs="unbounded">
+									<xs:complexType>
+										<xs:complexContent>
+											<xs:extension base="LocalVersionType"/>
+										</xs:complexContent>
+									</xs:complexType>
+								</xs:element>
+							</xs:sequence>
+						</xs:complexType>
+					</xs:element>
+				</xs:sequence>
+			</xs:extension>
+		</xs:complexContent>
+	</xs:complexType>
+	<xs:element name="PhysicalReleaseSchedule" type="Product"/>
+	<xs:complexType name="LocalVersionType">
+		<xs:sequence>
+			<xs:element name="LLVersionID" type="xs:int"/>
+			<xs:element name="Country">
+				<xs:complexType>
+					<xs:sequence>
+						<xs:element name="Name" type="xs:string" nillable="true"/>
+						<xs:element name="ISO" nillable="true">
+							<xs:simpleType>
+								<xs:restriction base="xs:string">
+									<xs:maxLength value="3"/>
+								</xs:restriction>
+							</xs:simpleType>
+						</xs:element>
+					</xs:sequence>
+				</xs:complexType>
+			</xs:element>
+			<xs:element name="ReleaseDate" type="xs:string"/>
+			<xs:element name="InitialOrders" type="xs:int" nillable="true"/>
+			<xs:element name="InitialOrderValidation" type="InitialOrderValidation" nillable="true" minOccurs="0"/>
+			<xs:element name="BoMID" type="xs:int" nillable="true" minOccurs="0"/>
+			<xs:element name="Comments">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:maxLength value="255"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="ReleasingLabel" type="LabelType" nillable="true" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>From global tables: Company/Division/Label combination. Global Tables LabelTripletID and a concatenation of above fields will be passed.</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="LocalCatNo" type="xs:string" nillable="true" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>Local catalog number</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="VS" nillable="true" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>Version Code</xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:maxLength value="2"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="LG" nillable="true" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>Language code</xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:maxLength value="2"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="CC" nillable="true" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>Supplement code.</xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:maxLength value="2"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="UPV" type="xs:string"/>
+			<xs:element name="LocalRowCreationDate" type="xs:string"/>
+			<xs:element name="LocalRowPushedToR2" type="xs:string"/>
+		</xs:sequence>
+	</xs:complexType>
+</xs:schema>

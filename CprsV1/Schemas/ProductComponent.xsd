@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- edited with XMLSPY v2004 rel. 4 U (http://www.xmlspy.com) by Any Authorised User (Teksys Ltd) -->
+<xs:schema targetNamespace="http://umusic.net/webservices/itdi/vanilla" elementFormDefault="qualified" attributeFormDefault="unqualified" version="2.1" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns="http://umusic.net/webservices/itdi/vanilla">
+	<xs:include schemaLocation="CommonTypes.xsd"/>
+	<xs:complexType name="Component">
+		<xs:sequence>
+			<xs:element name="CPRSComponentID" type="xs:int"/>
+			<xs:element name="ComponentUPC" type="xs:string" minOccurs="0"/>
+			<xs:element name="Artist" type="xs:string" minOccurs="0"/>
+			<xs:element name="Title" type="xs:string" minOccurs="0"/>
+			<xs:element name="Version" type="xs:string" minOccurs="0"/>
+			<xs:element name="FormatCode" type="CodeDescType"/>
+			<xs:element name="Sequence" type="xs:int">
+				<xs:annotation>
+					<xs:documentation>The sequence number refers to the order in which the components are packed</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="SubComponent" type="Component" minOccurs="0" maxOccurs="unbounded"/>
+		</xs:sequence>
+	</xs:complexType>
+</xs:schema>

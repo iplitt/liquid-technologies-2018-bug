@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- edited with XMLSpy v2010 rel. 3 sp1 (http://www.altova.com) by Jarrod Martin (Release Consulting) -->
+<!-- edited with XMLSPY v2004 rel. 4 U (http://www.xmlspy.com) by Any Authorised User (Teksys Ltd) -->
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns="http://umusic.net/webservices/itdi/vanilla" targetNamespace="http://umusic.net/webservices/itdi/vanilla" elementFormDefault="qualified" attributeFormDefault="unqualified" version="4.0">
+	<xs:include schemaLocation="ProductCommon.xsd"/>
+	<xs:include schemaLocation="ProductComponent.xsd"/>
+	<xs:complexType name="PhysicalProductDetails">
+		<xs:complexContent>
+			<xs:extension base="ProductCommon">
+				<xs:sequence>
+					<xs:element name="DiskCount" type="xs:int" default="0" nillable="false" minOccurs="0">
+						<xs:annotation>
+							<xs:documentation>Total number of discs in the BOM at the time the data is written. If no BOM exists, the field will not appear.</xs:documentation>
+						</xs:annotation>
+					</xs:element>
+					<xs:element name="SetType" nillable="false">
+						<xs:simpleType>
+							<xs:restriction base="xs:string">
+								<xs:enumeration value="None"/>
+								<xs:enumeration value="Set"/>
+								<xs:enumeration value="SuperSet"/>
+							</xs:restriction>
+						</xs:simpleType>
+					</xs:element>
+					<xs:element name="IsCopyProtected" type="xs:boolean" nillable="false">
+						<xs:annotation>
+							<xs:documentation>Specifies if the product has been copy protected. </xs:documentation>
+						</xs:annotation>
+					</xs:element>
+					<xs:element name="InitialOrders" type="xs:int" nillable="false">
+						<xs:annotation>
+							<xs:documentation>An estimate of initial orders for the product. Entered into CPRS by product controller.</xs:documentation>
+						</xs:annotation>
+					</xs:element>
+					<xs:element name="InitialOrderValidation" type="InitialOrderValidation" nillable="true" minOccurs="0"/>
+					<xs:element name="DeccaDGGInitialOrders" type="xs:int" nillable="false">
+						<xs:annotation>
+							<xs:documentation>TODO</xs:documentation>
+						</xs:annotation>
+					</xs:element>
+					<xs:element name="NPSCCode" type="CodeDescType">
+						<xs:annotation>
+							<xs:documentation>Code n/a until further notice.</xs:documentation>
+						</xs:annotation>
+					</xs:element>
+					<xs:element name="ReorderInfo" minOccurs="0">
+						<xs:annotation>
+							<xs:documentation>Corresponds to the CPRS 'x units of product can be supplied in y hours'.</xs:documentation>
+						</xs:annotation>
+						<xs:complexType>
+							<xs:sequence>
+								<xs:element name="Quantity" type="xs:int"/>
+								<xs:element name="Time" type="xs:int"/>
+							</xs:sequence>
+						</xs:complexType>
+					</xs:element>
+					<xs:element name="PhysStockDate" type="xs:date" minOccurs="0">
+						<xs:annotation>
+							<xs:documentation>Physical stock date - only if order is initiated.</xs:documentation>
+						</xs:annotation>
+					</xs:element>
+					<xs:element name="IMS" minOccurs="0">
+						<xs:annotation>
+							<xs:documentation>Only populated if CPRSProductType is set to IMS.</xs:documentation>
+						</xs:annotation>
+						<xs:complexType>
+							<xs:sequence>
+								<xs:element name="SupWarehse" type="CodeDescType" minOccurs="0">
+									<xs:annotation>
+										<xs:documentation>Supplier warehouse</xs:documentation>
+									</xs:annotation>
+								</xs:element>
+								<xs:element name="Licensee" type="CodeDescType" minOccurs="0"/>
+								<xs:element name="IniOrdEst" type="xs:int" minOccurs="0">
+									<xs:annotation>
+										<xs:documentation>Initial Order Estimate</xs:documentation>
+									</xs:annotation>
+								</xs:element>
+							</xs:sequence>
+						</xs:complexType>
+					</xs:element>
+					<xs:element name="DistributionOnly" minOccurs="0">
+						<xs:annotation>
+							<xs:documentation>Only populated if CPRSProductType is set to DistributionOnly.</xs:documentation>
+						</xs:annotation>
+						<xs:complexType>
+							<xs:sequence>
+								<xs:element name="Price" type="xs:decimal" minOccurs="0"/>
+								<xs:element name="ReleasingLabel" type="xs:string" minOccurs="0">
+									<xs:annotation>
+										<xs:documentation>
+										</xs:documentation>
+									</xs:annotation>
+								</xs:element>
+								<xs:element name="LeadTime" type="xs:int" minOccurs="0"/>
+								<xs:element name="Quantity" type="xs:int" minOccurs="0"/>
+								<xs:element name="OrigCountry" minOccurs="0">
+									<xs:simpleType>
+										<xs:restriction base="xs:string">
+											<xs:maxLength value="2"/>
+										</xs:restriction>
+									</xs:simpleType>
+								</xs:element>
+								<xs:element name="Contact" type="xs:string" minOccurs="0"/>
+							</xs:sequence>
+						</xs:complexType>
+					</xs:element>
+					<xs:element name="IsAutoSampling" type="xs:boolean" nillable="false">
+						<xs:annotation>
+							<xs:documentation>Flag for virtual factory to provide auto-samples for key personnel.</xs:documentation>
+						</xs:annotation>
+					</xs:element>
+					<xs:element name="LimitedEdition" type="xs:string"/>
+					<xs:element name="SpecialProject" type="xs:string"/>
+					<xs:element name="Components" nillable="true">
+						<xs:annotation>
+							<xs:documentation>A product can be made up of a number of different components the details of which are stored here. </xs:documentation>
+						</xs:annotation>
+						<xs:complexType>
+							<xs:sequence>
+								<xs:element name="Component" type="Component" nillable="true" minOccurs="0" maxOccurs="unbounded"/>
+							</xs:sequence>
+						</xs:complexType>
+					</xs:element>
+					<xs:element name="InitialOrderApproval" type="InitialOrderApproval"/>
+					<xs:element name="DeccaDGGInitialOrderApproval" type="InitialOrderApproval"/>
+				</xs:sequence>
+			</xs:extension>
+		</xs:complexContent>
+	</xs:complexType>
+	<xs:complexType name="InitialOrderApproval">
+		<xs:annotation>
+			<xs:documentation>Contains initial order approval status information.</xs:documentation>
+		</xs:annotation>
+		<xs:sequence>
+			<xs:element name="Status" nillable="false">
+				<xs:annotation>
+					<xs:documentation>Intial Order Approval Status enumeration.</xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:enumeration value="NotRequired"/>
+						<xs:enumeration value="AwaitingApproval"/>
+						<xs:enumeration value="Approved"/>
+						<xs:enumeration value="Rejected"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="Comment" type="xs:string" minOccurs="0"/>
+			<xs:element name="StatusDate" type="xs:dateTime" minOccurs="0"/>
+			<xs:element name="Approver" type="User" nillable="true" minOccurs="0"/>
+		</xs:sequence>
+	</xs:complexType>
+
+</xs:schema>
